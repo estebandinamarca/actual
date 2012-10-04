@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="640px" height="480px" viewBox="0 0 640 480" enable-background="new 0 0 640 480" xml:space="preserve">
+<script type = "text/javascript">
+function addOnloadEvent(fnc)
+{
+	if ( typeof window.addEventListener != "undefined" )
+		window.addEventListener( "load", fnc, false );
+	else if ( typeof window.attachEvent != "undefined" )
+		window.attachEvent( "onload", fnc );
+	else 
+	{
+		if ( window.onload != null )
+		{
+			var oldOnload = window.onload;
+			window.onload = function ( e ) {
+				oldOnload( e );
+				window[fnc]()
+			};
+		}
+		else 
+			window.onload = fnc;
+	}
+}
+</script>
+
+<foreignObject id = "f5C4557AB" x="162.0000px" y = "99.0000px" width = "82.0000px" height = "75.0000px">
+	<body xmlns="http://www.w3.org/1999/xhtml">
+		<canvas id="C5C4557AB" width="82.0000px" height="75.0000px">
+		</canvas>
+	</body>
+</foreignObject>
+
+<script  type="text/javascript">
+function func5C4557AB()
+{
+	var canvas = document.getElementById("C5C4557AB");
+	if (canvas.getContext) 
+	{
+		var context = canvas.getContext("2d");
+		var A5C4557AB = new Image();
+		A5C4557AB.onload = function(){
+		  context.drawImage(A5C4557AB, 0, 0, 74.0000, 75.0000);
+		  }
+	}
+	A5C4557AB.src = "5C4557AB.png";
+}
+addOnloadEvent(func5C4557AB);
+</script>
+
+<foreignObject id = "f5C4557A9" x="213.0000px" y = "142.0000px" width = "73.0000px" height = "65.0000px">
+	<body xmlns="http://www.w3.org/1999/xhtml">
+		<canvas id="C5C4557A9" width="73.0000px" height="65.0000px">
+		</canvas>
+	</body>
+</foreignObject>
+
+<script  type="text/javascript">
+function func5C4557A9()
+{
+	var canvas = document.getElementById("C5C4557A9");
+	if (canvas.getContext) 
+	{
+		var context = canvas.getContext("2d");
+		var A5C4557A9 = new Image();
+		A5C4557A9.onload = function(){
+		  context.drawImage(A5C4557A9, 0, 0, 65.0000, 65.0000);
+		  }
+	}
+	A5C4557A9.src = "5C4557A9.png";
+}
+addOnloadEvent(func5C4557A9);
+</script>
+
+<foreignObject id = "f5C4557AF" x="213.0000px" y = "99.0000px" width = "67.0000px" height = "59.0000px">
+	<body xmlns="http://www.w3.org/1999/xhtml">
+		<canvas id="C5C4557AF" width="67.0000px" height="59.0000px">
+		</canvas>
+	</body>
+</foreignObject>
+
+<script  type="text/javascript">
+function func5C4557AF()
+{
+	var canvas = document.getElementById("C5C4557AF");
+	if (canvas.getContext) 
+	{
+		var context = canvas.getContext("2d");
+		var A5C4557AF = new Image();
+		A5C4557AF.onload = function(){
+		  context.drawImage(A5C4557AF, 0, 0, 59.0000, 59.0000);
+		  }
+	}
+	A5C4557AF.src = "5C4557AF.png";
+}
+addOnloadEvent(func5C4557AF);
+</script>
+</svg>

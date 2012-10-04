@@ -1,0 +1,8 @@
+// DENTRO DE ../CSS/JQUERY.MOBILE/:
+
+// Reemplazar el archivo:
+// "jquery.mobile-1.1.0.min.css"
+
+// Por estos 2 archivos: 
+// "jquery.mobile.structure-1.1.0.min.css"
+// "jquery.mobile.theme-1.1.0.min.css" (Eliminando estilos innecesarios A,B,D,E)
