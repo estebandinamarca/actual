@@ -16,12 +16,15 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 /*---------------------------------------  Estilos Generales --------- */
 body, a {font-weight:normal; text-shadow:none; text-decoration:none;}
 div.contenedor-principal {width:1366px; height:768px; background:#FFF url(../../img/logo-villagra.png) top left no-repeat; overflow:hidden;}
-div.inicio-actual { background:url(../../img/bg-inicio.jpg) center no-repeat;}
+div.inicio-actual {background:url(../../img/bg-inicio.jpg) center no-repeat;}
+div.calidad360 {background:url(../../img/bg-calidad360.jpg) center no-repeat;}
+
 div.contenido {width:1366px; height:658px; float:left}
-div.contenido-inicio { background:url(../../img/bg-contenido-inicio.jpg) bottom center no-repeat;}
+div.contenido-inicio {background:url(../../img/bg-contenido-inicio.jpg) bottom center no-repeat;}
+
 
 /*--------------------------------------- Menú de Navegación -------- */
-div.botonera {width:1150px; height:110px; float:right; background:#333; -webkit-border-radius: 90px 0px 0px 0px; border-radius: 40px 0px 0px 0px;}
+div.botonera {width:1150px; height:110px; float:right; background:#231f20; -webkit-border-radius: 90px 0px 0px 0px; border-radius: 40px 0px 0px 0px;}
 nav.inicio {font-family:'Gotham-Book', Arial, Helvetica, sans-serif!important; text-decoration:none; color:#FFF; font-weight:normal; font-size:38px; text-align:center; padding:0; margin:0; line-height:110px; font-style:normal;}
 nav.inicio a {text-decoration:none; color:#FFF; font-weight:normal; padding:25px 20px; height:110px; text-shadow: 1px 1px 5px #000000; filter: dropshadow(color=#000000, offx=1, offy=1);}
 
