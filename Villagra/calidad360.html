@@ -5,23 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Villagra</title> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Jquery Base -->
-    <script src="js/jquery-1.7.1.min.js"></script> 
-    <!-- Jquery Mobile -->
-    <script src="js/jquery.mobile/jquery.mobile.custom.min.js"></script>    
-    <link rel="stylesheet" href="css/jquery.mobile/jquery.mobile.custom.structure.css" />
-    <link rel="stylesheet" href="css/jquery.mobile/jquery.mobile.custom.theme.min.css" />
-    <!-- Estilo Base -->
-    <link rel="stylesheet" href="css/base/base.css" />   
     </head>
 
 <body>
 <div data-role="page" id="calidad360">
+<!-- Fancybox 
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" />-->
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".modal-estilo").fancybox({
+            maxWidth    : 800,
+            maxHeight   : 600,
+            fitToView   : false,
+            width       : '70%',
+            height      : '70%',
+            autoSize    : false,
+            closeClick  : false,
+            openEffect  : 'elastic',
+            closeEffect : 'elastic'
+        });
+
+        $(".modal-servicio").fancybox({
+            maxWidth    : 800,
+            maxHeight   : 600,
+            fitToView   : false,
+            width       : '40%',
+            height      : '40%',
+            autoSize    : false,
+            closeClick  : false,
+            openEffect  : 'elastic',
+            closeEffect : 'elastic'
+        });
+
+    });
+</script><!-- /fancybox -->
 
     <div class="contenedor-principal calidad360">
     
-        <div class="contenido"></div>
-        
+        <div class="contenido">
+        <a class="modal-estilo fancybox.iframe" href="iframes/iframe.html" data-ajax="false">Iframe</a>  
+        <a class="modal-servicio fancybox.iframe" href="iframes/iframe.html" data-ajax="false">Iframe</a>
+
+        </div>
+
         <div class="botonera">
             <div class="botonera-top">
                 <nav class="top">
@@ -29,7 +56,7 @@
                 <a href="calidad360.html" class="current">Calidad 360º</a>|
                 <a href="beneficios.html">Beneficios</a>|
                 <a href="pilares.html">Pilares</a>|
-                <a href="gente.html">Nuestra Gente</a>|         
+                <a href="gente.html">Nuestra Gente</a>         
                 </nav>
             </div>
             <div class="botonera-bottom">
@@ -44,5 +71,6 @@
         </div>      
     </div>
 </div>
+
 </body>
 </html>
