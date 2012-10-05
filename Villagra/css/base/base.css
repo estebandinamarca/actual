@@ -21,7 +21,7 @@ div.calidad360 {background:url(../../img/bg-calidad360.jpg) center no-repeat;}
 
 div.contenido {width:1366px; height:658px; float:left}
 div.contenido-inicio {background:url(../../img/bg-contenido-inicio.jpg) bottom center no-repeat;}
-
+div.contenido-plantas-piso {background:url(../../img/bg-plantas-piso.jpg) center no-repeat;}
 
 /*--------------------------------------- Menú de Navegación -------- */
 div.botonera {width:1150px; height:110px; float:right; background:#231f20; -webkit-border-radius: 90px 0px 0px 0px; border-radius: 40px 0px 0px 0px;}
@@ -45,3 +45,6 @@ nav.inicio a.current {color: #af007c}
 a.link-estilo {position: absolute; width: 250px; height: 60px; top: 200px; left: 370px; text-decoration: none; display: block;}
 a.link-servicio {position: absolute; width: 320px; height: 60px; top: 310px; left: 260px; text-decoration: none; display: block;}
 a.link-ambiente {position: absolute; width: 320px; height: 60px; top: 460px; left: 190px; text-decoration: none; display: block;}
+
+/*--------------------------------------- Plantas Piso -------- */
+a.link-dpto1 {position: absolute; width: 320px; height: 60px; top: 460px; left: 190px; text-decoration: none; display: block;}

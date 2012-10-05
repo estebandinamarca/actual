@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Villagra</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+<body>
+<div data-role="page" id="plantas-piso">
+<!-- Fancybox 
+<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" />-->
+ <script type="text/javascript">
+    $(document).ready(function() {
+        $(".dpto1").fancybox({
+            fitToView   : false,
+            width       : '100%',
+            height      : '100%',
+            closeClick  : true,
+            openEffect  : 'elastic',
+            closeEffect : 'elastic',
+            padding     : 0,
+        });        
+
+    });
+</script><!-- /fancybox -->
+
+    <div class="contenedor-principal">
+        <div class="contenido contenido-plantas-piso">
+        <a class="dpto1 link-dpto1" href="img/bg-inicio.jpg" data-ajax="false">Prueba!</a>        
+        </div>
+
+        <div class="botonera">
+            <div class="botonera-top">
+                <nav class="top">
+                <a href="entorno.html">Entorno</a>|
+                <a href="video.html" class="current">Video 3D</a>|
+                <a href="lounge.html">Lounge</a>|
+                <a href="plantas-piso.html">Plantas Piso</a>|
+                <a href="gente.html">Tú Realidad Virtual</a>|
+                <a href="gente.html">Áreas Comunes</a>                          
+                </nav>
+            </div>
+            <div class="botonera-bottom">
+                <nav class="bottom">
+                <a href="http://actual.cl">Sitio Web</a>|
+                <a href="inicio-actual.html" data-transition="fade">Actual</a>|
+                <a href="edificio.html" class="current">Edificio</a>|
+                <a href="cotizacion.html">Cotización</a>|
+                <a href="tu.html" class="current">Tú!</a>
+                </nav>
+            </div>
+        </div>      
+    </div>
+</div>
+
+</body>
+</html>
