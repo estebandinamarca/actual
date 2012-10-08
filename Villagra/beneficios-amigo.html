@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Villagra</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+<body>
+<div data-role="page" id="inicio-beneficios">
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#slider').nivoSlider({
+                    effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
+                    animSpeed: 300, // Slide transition speed
+                    startSlide: 0, // Set starting Slide (0 index)
+                    directionNav: true, // Next & Prev navigation
+                    controlNav: false, // 1,2,3... navigation
+                    controlNavThumbs: false, // Use thumbnails for Control Nav
+                    pauseOnHover: false, // Stop animation while hovering
+                    manualAdvance: true, // Force manual transitions
+                    randomStart: false, // Start on a random slide
+                });
+            });
+        </script>
+
+    <div class="contenedor-principal">
+        <div class="contenido">
+
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <img src="img/bg-amigo.jpg" alt="" />
+                    <img src="img/bg-novios.jpg" alt="" />
+                    <img src="img/bg-hogar.jpg" alt="" />
+                    <img src="img/bg-pago.jpg" alt="" />                            
+                </div>
+                <div id="htmlcaption" class="nivo-html-caption">
+                    <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="botonera">
+            <div class="botonera-top">
+                <nav class="top">
+                <a href="inicio-covertura.html">Cobertura Geográfica</a>|
+                <a href="inicio-calidad360.html">Calidad 360º</a>|
+                <a href="inicio-beneficios.html" class="current">Beneficios</a>|
+                <a href="inicio-pilares.html">Pilares</a>|
+                <a href="inicio-video.html">Video Institucional</a>                   
+                </nav>
+            </div>
+            <div class="botonera-bottom">
+                <nav class="bottom">
+                <a href="http://www.iactual.cl">Sitio Web</a>|
+                <a href="inicio-actual.html" class="current">Actual</a>|
+                <a href="inicio-edificio.html">Edificio</a>|
+                <a href="inicio-cotizacion.html">Cotización</a>|
+                <a href="tu.html" class="current">Tú!</a>
+                </nav>
+            </div>
+        </div>      
+    </div>
+</div>
+
+</body>
+</html>
