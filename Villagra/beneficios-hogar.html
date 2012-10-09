@@ -8,14 +8,36 @@
     </head>
 
 <body>
-<div data-role="page" id="inicio-beneficios">
-            <a href="index.html" class="link-index"></a>
+<div data-role="page" id="beneficios-hogar">
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#slider').nivoSlider({
+                    effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
+                    animSpeed: 300, // Slide transition speed
+                    startSlide: 0, // Set starting Slide (0 index)
+                    directionNav: true, // Next & Prev navigation
+                    controlNav: false, // 1,2,3... navigation
+                    controlNavThumbs: false, // Use thumbnails for Control Nav
+                    manualAdvance: true, // Force manual transitions
+                    randomStart: false, // Start on a random slide
+                });
+            });
+        </script>
+
     <div class="contenedor-principal">
         <div class="contenido">
-            <div class="beneficios-btn"><a href="beneficios-amigo.html"><img src="img/amigo.jpg"></a></div>
-            <div class="beneficios-btn"><a href="beneficios-novios.html"><img src="img/novios.jpg"></a></div>
-            <div class="beneficios-btn"><a href="beneficios-hogar.html"><img src="img/hogar.jpg"></a></div>
-            <div class="beneficios-btn"><a href="beneficios-pago.html"><img src="img/pago.jpg"></a></div>    
+            <a href="index.html" class="link-index"></a>
+
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                    <img src="img/bg-hogar.jpg" alt=""/>
+                    <img src="img/bg-pago.jpg" alt=""/>
+                    <img src="img/bg-amigo.jpg" alt=""/>
+                    <img src="img/bg-novios.jpg" alt=""/>
+                </div>
+            </div>
+        
         </div>
 
         <div class="botonera">

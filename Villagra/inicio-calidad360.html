@@ -14,37 +14,26 @@
 <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" />-->
  <script type="text/javascript">
     $(document).ready(function() {
-        $(".modal-estilo").fancybox({
-            maxWidth    : 800,
-            maxHeight   : 600,
-            fitToView   : false,
-            width       : '70%',
-            height      : '50%',
-            autoSize    : false,
-            closeClick  : false,
+        $(".modal").fancybox({
+            //fitToView   : false,
+            //autoSize    : true,
+            closeClick  : true,
             openEffect  : 'elastic',
-            closeEffect : 'elastic'
-        });
-
-        $(".modal-servicio").fancybox({
-            maxWidth    : 800,
-            maxHeight   : 600,
-            fitToView   : false,
-            width       : '70%',
-            height      : '50%',
-            autoSize    : false,
-            closeClick  : false,
-            openEffect  : 'elastic',
-            closeEffect : 'elastic'
+            closeEffect : 'elastic',
+            padding     : 0,
+            maxWidth    : 460,
+            //maxHeight   : 290,
         });
     });
 </script><!-- /fancybox -->
 
     <div class="contenedor-principal calidad360">
+        <a href="index.html" class="link-index"></a>
+        
         <div class="contenido">
-        <a class="link-estilo modal-estilo fancybox.iframe" href="iframes/iframe.html" data-ajax="false"></a>  
-        <a class="link-servicio modal-servicio fancybox.iframe" href="iframes/iframe.html" data-ajax="false"></a>
-        <a class="link-ambiente modal-servicio fancybox.iframe" href="iframes/iframe.html" data-ajax="false"></a>
+        <a class="link-estilo modal fancybox.iframe" href="iframes/iframe.html" data-ajax="false"></a>  
+        <a class="link-servicio modal fancybox.iframe" href="iframes/iframe.html" data-ajax="false"></a>
+        <a class="link-ambiente modal fancybox.iframe" href="iframes/iframe.html" data-ajax="false"></a>
         </div>
 
         <div class="botonera">

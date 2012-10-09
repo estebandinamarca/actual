@@ -18,10 +18,15 @@ body, a {font-weight:normal; text-shadow:none; text-decoration:none;}
 div.contenedor-principal {width:1366px; height:768px; background:#FFF url(../../img/logo-villagra.png) top left no-repeat; overflow:hidden;}
 div.inicio-actual {background:url(../../img/bg-inicio.jpg) center no-repeat;}
 div.calidad360 {background:url(../../img/bg-calidad360.jpg) center no-repeat;}
+div.inicio-video {background:url(../../img/bg-video.jpg) center no-repeat;}
+div.inicio-covertura {background:url(../../img/bg-covertura.jpg) center no-repeat;}
+div.inicio-pronto {background:url(../../img/pronto.jpg) center no-repeat;}
 
 div.contenido {width:1366px; height:658px; float:left}
 div.contenido-inicio {background:url(../../img/bg-contenido-inicio.jpg) bottom center no-repeat;}
 div.contenido-plantas-piso {background:url(../../img/bg-plantas-piso.jpg) center no-repeat;}
+
+a.link-index {position: absolute; width: 320px; height: 130px; top: 0px; left: 0px; text-decoration: none; display: block;}
 
 /*--------------------------------------- Menú de Navegación -------- */
 div.botonera {width:1150px; height:110px; float:right; background:#231f20; -webkit-border-radius: 90px 0px 0px 0px; border-radius: 40px 0px 0px 0px;}
@@ -45,6 +50,10 @@ nav.inicio a.current {color: #af007c}
 div.beneficios-btn {width: 300px; height: 400px; float: left; margin-top: 150px; padding-top: 100px}
 div.beneficios-btn:first-child {margin-left: 50px;}
 
+/*--------------------------------------- Pilares -------- */
+div.pilares-btn {width: 350px; height: 420px; float: left; margin-top: 130px; padding-top: 100px}
+div.pilares-btn:first-child {margin-left: 135px;}
+
 /*--------------------------------------- Calidad 360 -------- */
 a.link-estilo {position: absolute; width: 250px; height: 60px; top: 200px; left: 370px; text-decoration: none; display: block;}
 a.link-servicio {position: absolute; width: 320px; height: 60px; top: 310px; left: 260px; text-decoration: none; display: block;}
@@ -52,3 +61,10 @@ a.link-ambiente {position: absolute; width: 320px; height: 60px; top: 460px; lef
 
 /*--------------------------------------- Plantas Piso -------- */
 a.link-dpto1 {position: absolute; width: 320px; height: 60px; top: 460px; left: 190px; text-decoration: none; display: block;}
+
+/*--------------------------------------- Video -------- */
+a.link-video {position: absolute; width: 480px; height: 300px; top: 220px; left: 450px; text-decoration: none; display: block;}
+
+/*--------------------------------------- Video -------- */
+div.contenido-iframe {background: #797f8b; padding: 30px; margin: 0; height: auto; width: auto;}
+div.texto-iframe {background: #797f8b; margin: 0; width: 400px; height: auto; font-family: 'Gotham-Book', Arial, Helvetica, sans-serif!important; font-weight:normal; color: #FFF;}
