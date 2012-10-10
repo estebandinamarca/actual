@@ -49,7 +49,7 @@
 }
 
 .fancybox-inner {
-	overflow: hidden;
+	overflow: hidden!important;
 }
 
 .fancybox-type-iframe .fancybox-inner {
@@ -162,14 +162,14 @@
 /* Overlay helper */
 
 .fancybox-lock {
-	overflow: hidden;
+	overflow: hidden!important;
 }
 
 .fancybox-overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
-	overflow: hidden;
+	overflow: hidden!important;
 	display: none;
 	z-index: 8010;
 	background: url('../../img/fancybox/fancybox_overlay.png');
@@ -182,8 +182,8 @@
 }
 
 .fancybox-lock .fancybox-overlay {
-	overflow: hidden;
-	overflow-y: hidden;
+	overflow: hidden!important;
+	overflow-y: hidden!important;
 }
 
 /* Title helper */
