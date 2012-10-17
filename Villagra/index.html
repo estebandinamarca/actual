@@ -19,13 +19,21 @@
     <link rel="stylesheet" href="css/nivoslider/themes/default/default.css" />
     <script type="text/javascript" src="js/nivoslider/jquery.nivo.slider.pack.js"></script>
     <!-- Estilo Base -->
-    <link rel="stylesheet" href="css/base/base.css" />   
+    <link rel="stylesheet" href="css/base/base.css" />
     </head>
 
 <body>
 <div data-role="page" id="index">
 
-    <div class="contenedor-principal">
+    <!-- Efecto Fade -->    
+    <script>
+    $(document).ready(function() {
+        $('.efecto-pagina').css("display", "none");
+        $('.efecto-pagina').fadeIn('slow'); 
+      });
+    </script>    
+
+    <div class="contenedor-principal efecto-pagina">
 
         <div class="contenido contenido-inicio">
             <a href="index.html" class="link-index"></a>

@@ -5,30 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Villagra</title> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Jquery Base -->
+    <script src="js/jquery-1.8.2.min.js"></script> 
+    <!-- Jquery Mobile -->
+    <script src="js/jquery.mobile/jquery.mobile.custom.min.js"></script>    
+    <link rel="stylesheet" href="css/jquery.mobile/jquery.mobile.custom.structure.css" />
+    <link rel="stylesheet" href="css/jquery.mobile/jquery.mobile.custom.theme.min.css" />
+    <!-- Fancybox -->
+    <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" />
+    <!-- Nivoslider -->
+    <link rel="stylesheet" href="css/nivoslider/nivo-slider.css" />    
+    <link rel="stylesheet" href="css/nivoslider/themes/default/default.css" />
+    <script type="text/javascript" src="js/nivoslider/jquery.nivo.slider.pack.js"></script>
+    <!-- Estilo Base -->
+    <link rel="stylesheet" href="css/base/base.css" />
+    <!-- Efecto Fade -->    
+    <script>
+    $(document).ready(function() {
+        $('.efecto-pagina').css("display", "none");
+        $('.efecto-pagina').fadeIn('slow'); 
+    });
+    </script>     
     </head>
 
 <body>
-<div data-role="page" id="inicio-calidad360">
-<!-- Fancybox 
-<script src="js/fancybox/jquery.fancybox.pack.js"></script>
-<link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" />-->
- <script type="text/javascript">
-    $(document).ready(function() {
-        $(".modal").fancybox({
-            //fitToView   : false,
-            //autoSize    : true,
-            closeClick  : true,
-            openEffect  : 'elastic',
-            closeEffect : 'elastic',
-            padding     : 0,
-            maxWidth    : 460,
-            //maxHeight   : 290,
+<div data-role="page" id="inicio-calidad360" class="efecto-pagina">
+
+    <!-- Fancybox -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".modal").fancybox({
+                closeClick  : true,
+                openEffect  : 'elastic',
+                closeEffect : 'elastic',
+                padding     : 0,
+                maxWidth    : 460,
+            });
         });
-    });
-</script><!-- /fancybox -->
+    </script>   
 
     <div class="contenedor-principal calidad360">
-        <a href="index.html" class="link-index" data-transition="flip" data-direction="reverse"></a>
+        <a href="index.html" class="link-index" data-transition="fade" data-direction="reverse"></a>
         
         <div class="contenido">
         <a class="link-estilo modal fancybox.iframe" href="iframes/iframe-estilo.html" data-ajax="false"></a>  
@@ -42,7 +60,7 @@
         <div class="botonera">
             <div class="botonera-top">
                 <nav class="top">
-                <a href="inicio-covertura.html">Cobertura Geográfica</a>|
+                <a href="inicio-covertura.html" rel="external">Cobertura Geográfica</a>|
                 <a href="inicio-calidad360.html" class="current">Calidad 360º</a>|
                 <a href="inicio-beneficios.html">Beneficios</a>|
                 <a href="inicio-pilares.html">Pilares</a>|

@@ -8,7 +8,20 @@
     </head>
 
 <body>
-<div data-role="page" id="inicio-video3d">
+<div data-role="page" id="inicio-video3d" class="efecto-pagina">
+    <!-- Fancybox -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".video").fancybox({
+                closeClick  : true,
+                openEffect  : 'elastic',
+                closeEffect : 'elastic',
+                padding     : 0,
+                maxWidth    : 460,
+            });
+        });
+    </script>
+
     <a href="index.html" class="link-index" data-transition="flip" data-direction="reverse"></a>
     
     <div class="contenedor-principal inicio-video3d">
@@ -30,7 +43,7 @@
             <div class="botonera-bottom">
                 <nav class="bottom">
                 <a href="http://www.iactual.cl">Sitio Web</a>|
-                <a href="inicio-actual.html">Actual</a>|
+                <a href="inicio-actual.html" data-transition="fade">Actual</a>|
                 <a href="inicio-edificio.html" class="current">Edificio</a>|
                 <a href="inicio-cotizacion.html">Cotización</a>|
                 <a href="tu.html" class="current">Tú!</a>
