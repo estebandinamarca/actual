@@ -82,5 +82,5 @@ a.link-video3d {position: absolute; width: 480px; height: 300px; top: 262px; lef
 
 /*--------------------------------------- Covertura - SVG -------- */
 div.mapa-svg { position: absolute; top: 30px; left: 710px; width: auto; height: auto; background: #FFF;}
-#santiago, #lascondes, #nunoa, #sanmiguel, #huechuraba  {opacity: 0.5; /*cursor: none*/}
-#santiago:active, #lascondes:active, #nunoa:active, #sanmiguel:active, #huechuraba:active {opacity: 1;}
+#santiago, #lascondes, #nunoa, #sanmiguel, #huechuraba, path, g {opacity: 1; /*cursor: none*/}
+#santiago:active, #lascondes:active, #nunoa:active, #sanmiguel:active, #huechuraba:active {opacity: 0.6;}
