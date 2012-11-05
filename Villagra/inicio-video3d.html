@@ -3,30 +3,44 @@
     <head> 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Villagra</title> 
+    <title>Villagra</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
 <body>
 <div data-role="page" id="inicio-video3d" class="efecto-pagina">
-    <!-- Fancybox -->
+    <!-- Fancybox 
     <script type="text/javascript">
         $(document).ready(function() {
             $(".video").fancybox({
                 closeClick  : true,
-                openEffect  : 'elastic',
-                closeEffect : 'elastic',
+                openEffect  : 'fade',
+                closeEffect : 'fade',
                 padding     : 0,
-                maxWidth    : 460,
+                maxWidth    : 640,
             });
         });
-    </script>
+    </script> -->
 
-    <a href="index.html" class="link-index" data-transition="flip" data-direction="reverse"></a>
+    <!-- Videojs -->
+    <link rel="stylesheet" href="css/videojs/video-js.css">
+    <script src="js/videojs/video.js"></script>  -->     
+
+    <a href="index.html" class="link-index" data-transition="fade" data-direction="reverse"></a>
     
     <div class="contenedor-principal inicio-video3d">
         <div class="contenido">
-            <a class="link-video3d video fancybox.iframe" href="iframes/iframe.html" data-ajax="false"></a>
+            <a class="link-video3d video fancybox.iframe" href="iframes/video.html" data-ajax="false"></a>
+
+            <div class="video3d">    
+                <video id="video-prueba" class="video-js vjs-default-skin" controls
+                  preload="auto" width="330" height="224" poster="img/preview.jpg"
+                  data-setup='{"controls": false, "autoplay": true, "preload": "auto", "loop": "true"}'>
+                  <source src="videos/prueba.mp4" type='video/mp4'>
+                  <source src="videos/my_video.webm" type='video/webm'>
+                </video>
+            </div>
+
         </div>
 
         <div class="botonera">

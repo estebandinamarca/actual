@@ -8,13 +8,13 @@
     </head>
 
 <body>
-<div data-role="page" id="inicio-tu">
+<div data-role="page" id="plantas-piso-dpto-c">
 <!-- Fancybox 
 <script src="js/fancybox/jquery.fancybox.pack.js"></script>
 <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" />-->
- <script type="text/javascript">
+<script type="text/javascript">
     $(document).ready(function() {
-        $(".dpto1").fancybox({
+        $(".dpto-video").fancybox({
             fitToView   : false,
             width       : '100%',
             height      : '100%',
@@ -23,32 +23,34 @@
             closeEffect : 'elastic',
             padding     : 0,
         });        
-
     });
 </script><!-- /fancybox -->
 
-    <div class="contenedor-principal inicio-pronto">
-        <a href="index.html" class="link-index" data-transition="fade" data-direction="reverse"></a>
+    <div class="contenedor-principal bg-dpto-h">
+        <a href="index.html" class="link-index" data-transition="fade"></a>
+        <a href="inicio-plantas-piso.html" class="plantas-volver-btn" data-transition="fade"></a>
 
-        <div class="contenido"></div>
+        <div class="contenido">
+            <a class="dpto-video link-video" href="img/bg-inicio.jpg" data-ajax="false"></a>        
+        </div>
 
         <div class="botonera">
             <div class="botonera-top">
                 <nav class="top">
-                <a href="entorno.html">Entorno</a>|
-                <a href="video.html">Video 3D</a>|
-                <a href="lounge.html">Lounge</a>|
-                <a href="plantas-piso.html">Plantas Piso</a>|
-                <a href="realidad-virtual.html">Tú Realidad Virtual</a>|
-                <a href="areas-comunes.html">Áreas Comunes</a>                          
+                <a href="inicio-entorno.html">Entorno</a>|
+                <a href="inicio-video.html">Video 3D</a>|
+                <a href="inicio-lounge.html">Lounge</a>|
+                <a href="inicio-plantas-piso.html" class="current">Plantas Piso</a>|
+                <a href="inicio-realidad-virtual.html">Tú Realidad Virtual</a>|
+                <a href="inicio-areas-comunes.html">Áreas Comunes</a>                          
                 </nav>
             </div>
             <div class="botonera-bottom">
                 <nav class="bottom">
                 <a href="http://www.iactual.cl">Sitio Web</a>|
                 <a href="inicio-actual.html">Actual</a>|
-                <a href="inicio-edificio.html">Edificio</a>|
-                <a href="inicio-cotizacion.html" class="current">Cotización</a>|
+                <a href="inicio-edificio.html" class="current">Edificio</a>|
+                <a href="inicio-cotizacion.html">Cotización</a>|
                 <a href="tu.html" class="current">Tú!</a>
                 </nav>
             </div>
