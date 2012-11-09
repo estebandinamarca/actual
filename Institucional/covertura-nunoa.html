@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Villagra</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Jquery Base -->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <!-- Estilo Base -->
+    <link rel="stylesheet" href="css/base/base.css" />
+    <!-- Efecto Fade -->    
+    <script>
+    $(document).ready(function() {
+        $('.efecto-pagina').css("display", "none");
+        $('.efecto-pagina').fadeIn('slow'); 
+      });
+    </script>
+    <!-- Fancybox -->
+    <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" />    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".dpto").fancybox({
+                closeClick  : true,
+                openEffect  : 'elastic',
+                closeEffect : 'elastic',
+                padding     : 0,
+                height      : 400,
+                width       : 678,
+                autoSize    : false,
+                closeBtn    : false,
+            });
+        });
+    </script>
+    </head>
+
+<body>
+<div class="efecto-pagina">
+
+    <div class="contenedor-principal inicio-mapa-nunoa">
+        <a href="inicio-covertura.html" class="mapa-svg-volver" data-transition="fade"></a>        
+
+        <div class="contenido">
+        <a href="iframes/nunoa-dpto1.html" class="dpto nunoa-dpto1 fancybox.iframe" data-ajax="false"></a>
+        <a href="#" class="dpto nunoa-dpto2"></a>
+        <a href="#" class="imagen nunoa-dpto3"></a>
+        <a href="#" class="imagen nunoa-dpto4"></a>
+        <a href="#" class="imagen nunoa-dpto5"></a>
+        <a href="#" class="imagen nunoa-dpto6"></a>
+        <a href="#" class="imagen nunoa-dpto7"></a>
+        <a href="#" class="imagen nunoa-dpto8"></a>
+        <a href="#" class="imagen nunoa-dpto9"></a>
+        <a href="#" class="imagen nunoa-dpto10"></a>
+        <a href="#" class="imagen nunoa-dpto11"></a>
+        <a href="#" class="imagen nunoa-dpto12"></a>
+        <a href="#" class="imagen nunoa-dpto13"></a>
+        <a href="#" class="imagen nunoa-dpto14"></a>
+        <a href="#" class="imagen nunoa-dpto15"></a>
+        <a href="#" class="imagen nunoa-dpto16"></a>
+        <a href="#" class="imagen nunoa-dpto17"></a>
+        <a href="#" class="imagen nunoa-dpto18"></a>
+        <a href="#" class="imagen nunoa-dpto19"></a>
+        <a href="#" class="imagen nunoa-dpto20"></a>        
+        </div>
+
+        <ul class="botonera-horizontal">
+            <li class="sitio-web"><a href="sitio.html" rel="external">Sitio Web</a></li>
+            <li class="actual"><a class="current" href="inicio-actual.html">Actual</a></li>
+            <li class="proyectos"><a href="proyectos.html">Proyectos</a></li>
+        </ul>        
+
+        <div class="botonera">
+            <div class="botonera-top">
+                <nav class="top">
+                <a href="inicio-covertura.html" class="current">Cobertura Geográfica</a>
+                <a href="inicio-calidad360.html">Calidad 360º</a>
+                <a href="inicio-beneficios.html">Beneficios</a>
+                <a href="inicio-pilares.html">Pilares</a>
+                <a href="inicio-video.html">Video Institucional</a>                   
+                </nav>
+            </div>
+        </div>      
+    </div>
+</div>
+
+</body>
+</html>

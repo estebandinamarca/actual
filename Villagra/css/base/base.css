@@ -26,6 +26,7 @@ div.inicio-lounge {background:url(../../img/bg-lounge.jpg) center no-repeat;}
 div.inicio-pronto {background:url(../../img/pronto.jpg) center no-repeat;}
 div.inicio-areas-comunes {background:url(../../img/bg-areas-comunes.jpg) center no-repeat;}
 div.inicio-mapa-nunoa {background:url(../../img/bg-mapa-nunoa.jpg) center top no-repeat;}
+div.inicio-mapa-las-condes {background:url(../../img/bg-mapa-las-condes.jpg) center top no-repeat;}
 div.inicio-plantas-piso {background:url(../../img/bg-plantas-piso.jpg) center no-repeat;}
 
 /*---------------------------------------  Div Contenido --------- */
@@ -101,7 +102,7 @@ a.link-dpto-k {width: 260px; height: 185px; top: 190px; left: 35px;}
 a.link-video {position: absolute; width: 480px; height: 300px; top: 220px; left: 450px; text-decoration: none; display: block;}
 
 /*--------------------------------------- Video3D -------- */
-div.video3d {position: absolute; width: 300px; height: 224px; top: 264px; left: 767px; text-decoration: none; display: block;}
+div.video3d {position: absolute; width: 490px; height:300px; padding: 5px 20px; background: #000; top: 261px; left: 755px; text-decoration: none; display: block;}
 a.link-video3d {position: absolute; width: 480px; height: 300px; top: 262px; left: 770px; text-decoration: none; display: block;}
 
 /*--------------------------------------- Covertura - SVG -------- */
