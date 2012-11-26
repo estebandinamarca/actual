@@ -16,20 +16,21 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 body, a {font-weight:normal; text-shadow:none; text-decoration:none; overflow: hidden;}
 
 /*---------------------------------------  Backgrounds Páginas --------- */
-div.contenedor-principal {width:1366px; height:768px; /*background:#FFF url(../../img/logo-villagra.png) top left no-repeat;*/ overflow:hidden;}
+div.contenedor-principal {width:1366px; height:768px; overflow:hidden;}
 div.inicio {background:url(../../img/bg-inicio.jpg) center no-repeat;}
 
 div.inicio-beneficios {background:url(../../img/bg-beneficios.jpg) center no-repeat;}
 div.inicio-pilares {background:url(../../img/bg-pilares.jpg) center no-repeat;}
 div.inicio-calidad360 {background:url(../../img/bg-calidad360.jpg) center no-repeat;}
 div.inicio-video {background:url(../../img/bg-video.jpg) center no-repeat;}
-/*div.inicio-covertura {background:url(../../img/bg-covertura.jpg) center no-repeat;}*/
 div.inicio-mapa-nunoa {background:url(../../img/bg-mapa-nunoa.jpg) center top no-repeat;}
 div.inicio-mapa-las-condes {background:url(../../img/bg-mapa-las-condes.jpg) center top no-repeat;}
+div.inicio-mapa-san-miguel {background:url(../../img/bg-mapa-san-miguel.jpg) center top no-repeat;}
+div.inicio-mapa-santiago {background:url(../../img/bg-mapa-santiago.jpg) center top no-repeat;}
+div.inicio-mapa-huechuraba {background:url(../../img/bg-mapa-huechuraba.jpg) center top no-repeat;}
 
 /*---------------------------------------  Div Contenido --------- */
 div.contenido {width:1366px; height:675px; float:left}
-/*a.link-index {position: absolute; width: 320px; height: 130px; top: 0px; left: 0px; text-decoration: none; display: block;}*/
 
 /*--------------------------------------- Menús de Navegación -------- */
 /* Nav Vertical Index */
@@ -73,7 +74,6 @@ a.link-next, a.link-prev {position: absolute; text-decoration: none; display: bl
 a.link-next {width: 90px; height: 130px; top: 310px; left: 251px; /*background: #CCC; opacity: .5;*/}
 a.link-prev {width: 90px; height: 130px; top: 310px; left: 5px; /*background: #CCC; opacity: .5;*/}
 
-
 /*--------------------------------------- Beneficios -------- */
 a.link-beneficios-novios, a.link-beneficios-amigos, a.link-beneficios-hogar, a.link-beneficios-propiedad {position: absolute; text-decoration: none; display: block; -webkit-transform: scale(1) rotate(78deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);}
 a.link-beneficios-novios {width: 313px; height: 260px; top: 330px; left: 42px; /*background: #CCC; opacity: .5;*/}
@@ -86,8 +86,6 @@ a.link-pilares-estilo, a.link-pilares-seguridad, a.link-pilares-medio-ambiente {
 a.link-pilares-estilo {width: 353px; height: 360px; top: 320px; left: 72px; /*background: #CCC; opacity: .5;*/}
 a.link-pilares-seguridad {width: 495px; height: 460px; top: 70px; left: 385px; /*background: #CCC; opacity: .5;*/}
 a.link-pilares-medio-ambiente {width: 600px; height: 530px; top: 35px; left: 850px; /*background: #CCC; opacity: .5;*/}
-/*div.pilares-btn {width: 350px; height: 420px; float: left; margin-top: 130px; padding-top: 100px}
-div.pilares-btn:first-child {margin-left: 135px;}*/
 
 /*--------------------------------------- Calidad 360 -------- */
 a.link-estilo, a.link-servicio, a.link-ambiente, a.link-ubicacion, a.link-calidad, a.link-venta, a.link-experiencia {position: absolute; text-decoration: none; display: block;}
@@ -133,13 +131,21 @@ a.link-video {position: absolute; width: 480px; height: 300px; top: 220px; left:
 div.video3d {position: absolute; width: 490px; height:300px; padding: 5px 20px; background: #000; top: 261px; left: 755px; text-decoration: none; display: block;}
 a.link-video3d {position: absolute; width: 480px; height: 300px; top: 262px; left: 770px; text-decoration: none; display: block;}
 
-/*--------------------------------------- Covertura - SVG -------- */
+/*--------------------------------------- Inicio Covertura SVG -------- */
+div.mapa-svg { width: auto; height: auto; background: #FFF; margin: 35px auto 0 auto; text-align: center;}
+#santiago, #lascondes, #nunoa, #sanmiguel, #huechuraba, path, g {opacity: 1; cursor: none}
+#santiago:active, #lascondes:active, #nunoa:active, #sanmiguel:active, #huechuraba:active {opacity: 0.6;}
+
+/*--------------------------------------- Covertura Mapas -------- */
 a.mapa-svg-volver, a.nunoa-dpto1, a.nunoa-dpto2, a.nunoa-dpto3, a.nunoa-dpto4, a.nunoa-dpto5, a.nunoa-dpto6,
 a.nunoa-dpto7, a.nunoa-dpto8, a.nunoa-dpto9, a.nunoa-dpto10, a.nunoa-dpto11, a.nunoa-dpto12, a.nunoa-dpto13,
 a.nunoa-dpto14, a.nunoa-dpto15, a.nunoa-dpto16, a.nunoa-dpto17, a.nunoa-dpto18, a.nunoa-dpto19,
-a.nunoa-dpto20 {width: 30px; height: 30px; position: absolute; text-decoration: none; display: block; -webkit-transform: scale(1) rotate(78deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); background: #CCC; opacity: 0.5;}
-
+a.nunoa-dpto20, a.santiago-dpto1, a.santiago-dpto2, a.santiago-dpto3, a.las-condes-dpto1, a.las-condes-dpto2,
+a.las-condes-dpto3, a.las-condes-dpto4, a.las-condes-dpto5, a.san-miguel-dpto1, a.san-miguel-dpto2,
+a.san-miguel-dpto3, a.huechuraba-dpto1, a.huechuraba-dpto2 {width: 30px; height: 30px; position: absolute; text-decoration: none; display: block; -webkit-transform: scale(1) rotate(78deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); background: #CCC; opacity: 0.5;}
 a.mapa-svg-volver {width: 150px; height: 145px; top: 25px; left: 1095px;-webkit-transform: none;}
+
+/*--------- Ñuñoa -------- */
 a.nunoa-dpto1 {top: 343px; left: 175px;}
 a.nunoa-dpto2 {top: 415px; left: 156px;}
 a.nunoa-dpto3 {top: 376px; left: 238px;}
@@ -161,20 +167,45 @@ a.nunoa-dpto18 {top: 388px; left: 1073px;}
 a.nunoa-dpto19 {top: 334px; left: 1192px;}
 a.nunoa-dpto20 {top: 420px; left: 1193px;}
 
-div.mapa-svg { width: auto; height: auto; background: #FFF; margin: 35px auto 0 auto; text-align: center;}
-#santiago, #lascondes, #nunoa, #sanmiguel, #huechuraba, path, g {opacity: 1; cursor: none}
-#santiago:active, #lascondes:active, #nunoa:active, #sanmiguel:active, #huechuraba:active {opacity: 0.6;}
+/*--------- Santiago -------- */
+a.santiago-dpto1, a.santiago-dpto2, a.santiago-dpto3 {width: 55px; height: 55px;}
+a.santiago-dpto1 {top: 56px; left: 421px;}
+a.santiago-dpto2 {top: 578px; left: 540px;}
+a.santiago-dpto3 {top: 305px; left: 995px;}
 
-/* ////////////////////////////////////// Iframes -------- */
-/*///*/ div.contenido-iframe {background: #797f8b; padding: 30px; margin: 0; height: auto; width: auto; overflow: hidden!important;}
-/*///*/ div.texto-iframe {background: #797f8b; margin: 0; width: 400px; height: auto; font-family: 'Gotham-Book', Arial, Helvetica, sans-serif!important; font-weight:normal; color: #FFF; overflow: hidden!important;}
-/*///*/
-/*///// Iframes Deptos -------- */
-/*///*/ div.contenido-depto {background: #008ac9!important; padding: 0; margin: 0; height: 400px; width: auto; overflow: hidden!important;}
-/*///*/	div.texto-dpto { float: right; background: #008ac9; margin: 0; padding: 10px; width: 300px; height: 400px; font-family: 'Gotham-Book', Arial, Helvetica, sans-serif!important; font-weight:normal; color: #FFF; overflow: hidden!important;}
-/*///*/	div.imagen-dpto { float: left; width: 358px; background: #008ac9!important}
-/*////////////////////////////////////// Fin-Iframes -------- */
+/*--------- Las Condes -------- */
+a.las-condes-dpto1, a.las-condes-dpto2, a.las-condes-dpto3, a.las-condes-dpto4, a.las-condes-dpto5 {width: 50px; height: 50px;}
+a.las-condes-dpto1 {top: 29px; left: 840px;}
+a.las-condes-dpto2 {top: 513px; left: 632px;}
+a.las-condes-dpto3 {top: 520px; left: 737px;}
+a.las-condes-dpto4 {top: 528px; left: 790px;}
+a.las-condes-dpto5 {top: 549px; left: 848px;}
+
+/*--------- San Miguel -------- */
+a.san-miguel-dpto1, a.san-miguel-dpto2, a.san-miguel-dpto3 {width: 55px; height: 55px;}
+a.san-miguel-dpto1 {top: 84px; left: 633px;}
+a.san-miguel-dpto2 {top: 275px; left: 590px;}
+a.san-miguel-dpto3 {top: 560px; left: 531px;}
+
+/*--------- Huechuraba -------- */
+a.huechuraba-dpto1, a.huechuraba-dpto2 {width: 55px; height: 55px;}
+a.huechuraba-dpto1 {top: 79px; left: 412px;}
+a.huechuraba-dpto2 {top: 547px; left: 1125px;}
+
+/* ////////////////////////////////////// Iframes Gral -------- */
+div.contenido-iframe {background: #797f8b; padding: 30px; margin: 0; height: auto; width: auto; overflow: hidden!important;}
+div.texto-iframe {background: #797f8b; margin: 0; width: 400px; height: auto; font-family: 'Gotham-Book', Arial, Helvetica, sans-serif!important; font-weight:normal; color: #FFF; overflow: hidden!important;}
+
+/*////////////////////////////////////// Iframes Deptos -------- */
+body.dptos { width: 700px; height:445px; margin: 0; padding: 0; background: #008ac9!important; overflow: hidden!important; }
+div.texto-dpto { float: right; background: #008ac9; margin: 0; padding: 0; width: 300px; height: 445px; overflow: hidden!important;}
+div.texto-dpto p { padding: 10px 20px 0 10px; font-family: 'Gotham-Book', Arial, Helvetica, sans-serif!important; font-weight:normal; color: #FFF; text-align: left; font-size: 18px;}
+div.texto-dpto p a {text-decoration: none; color: #FFF; font-size: 25px; font-weight: bold; display: block; width: 200px; height: 50px; background:url(../../img/dptos/360-flecha.png) no-repeat center right; padding: 5px 20px; line-height: 50px;}
+div.imagen-dpto { float: left; width: 400px; height: 445px; background: #008ac9!important; padding: 0; margin: 0;}
+
+div#icono {background:url(../../img/icono-touch.png) no-repeat center center; height: 400px; width: 400px; position: absolute; left: 35%; top: 21%;
+/*margin: -25px 0 0 -25px*/; z-index: 1000;}​
 
 /*--------------------------------------- Cursor None -------- */
 /*html, body, img, a {cursor: none!important; -moz-user-select: none;-webkit-user-select: none;-webkit-user-drag:none; -khtml-user-select: none; -ms-user-select: none; user-select: none;}
-input, label {cursor: none!important;}
+input, label {cursor: none!important;}*/

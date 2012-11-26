@@ -13,7 +13,8 @@
     <script>
     $(document).ready(function() {
         $('.efecto-pagina').css("display", "none");
-        $('.efecto-pagina').fadeIn('slow'); 
+        $('.efecto-pagina').fadeIn('slow');
+        $('#icono').fadeOut(2300); 
       });
     </script>
     <!-- Fancybox -->
@@ -21,45 +22,33 @@
     <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" />    
     <script type="text/javascript">
         $(document).ready(function() {
-            $(".imagen").fancybox({
+            $(".dpto").fancybox({
                 closeClick  : true,
                 openEffect  : 'elastic',
                 closeEffect : 'elastic',
                 padding     : 0,
-                maxWidth    : 460,
+                height      : 445,
+                width       : 700,
+                autoSize    : false,
+                closeBtn    : false,
             });
         });
     </script>
     </head>
 
 <body>
-<div data-role="page" id="covertura-las-condes-prueba" class="efecto-pagina">
+<div id="icono"></div>
+<div class="efecto-pagina">
 
     <div class="contenedor-principal inicio-mapa-las-condes">
-        <a href="index.html" class="link-index" data-transition="fade"></a>
-        <a href="inicio-covertura.html" class="mapa-svg-volver" data-transition="fade"></a>        
+        <a href="inicio-covertura.html" class="mapa-svg-volver"></a>        
 
         <div class="contenido">
-        <a href="#" class="imagen las-condes-dpto1"></a>
-        <a href="#" class="imagen las-condes-dpto2"></a>
-        <a href="#" class="imagen las-condes-dpto3"></a>
-        <a href="#" class="imagen las-condes-dpto4"></a>
-        <a href="#" class="imagen las-condes-dpto5"></a>
-        <a href="#" class="imagen las-condes-dpto6"></a>
-        <a href="#" class="imagen las-condes-dpto7"></a>
-        <a href="#" class="imagen las-condes-dpto8"></a>
-        <a href="#" class="imagen las-condes-dpto9"></a>
-        <a href="#" class="imagen las-condes-dpto10"></a>
-        <a href="#" class="imagen las-condes-dpto11"></a>
-        <a href="#" class="imagen las-condes-dpto12"></a>
-        <a href="#" class="imagen las-condes-dpto13"></a>
-        <a href="#" class="imagen las-condes-dpto14"></a>
-        <a href="#" class="imagen las-condes-dpto15"></a>
-        <a href="#" class="imagen las-condes-dpto16"></a>
-        <a href="#" class="imagen las-condes-dpto17"></a>
-        <a href="#" class="imagen las-condes-dpto18"></a>
-        <a href="#" class="imagen las-condes-dpto19"></a>
-        <a href="#" class="imagen las-condes-dpto20"></a>        
+        <a href="iframes/las-condes-dpto1.html" class="dpto las-condes-dpto1 fancybox.iframe"></a>
+        <a href="iframes/las-condes-dpto2.html" class="dpto las-condes-dpto2 fancybox.iframe"></a>
+        <a href="iframes/las-condes-dpto3.html" class="dpto las-condes-dpto3 fancybox.iframe"></a>
+        <a href="iframes/las-condes-dpto4.html" class="dpto las-condes-dpto4 fancybox.iframe"></a>
+        <a href="iframes/las-condes-dpto5.html" class="dpto las-condes-dpto5 fancybox.iframe"></a>
         </div>
 
         <ul class="botonera-horizontal">

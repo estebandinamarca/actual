@@ -5,30 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Villagra</title> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Estilo Base -->
+    <link rel="stylesheet" href="css/base/base.css" />
+    <!-- Jquery Base -->
+    <script src="js/jquery-1.8.2.min.js"></script> 
+    <!-- Efecto Fade -->    
+    <script>
+    $(document).ready(function() {
+        $('.efecto-pagina').css("display", "none");
+        $('.efecto-pagina').fadeIn('slow'); 
+      });
+    </script>
+    <!-- Nivoslider -->
+    <link rel="stylesheet" href="css/nivoslider/nivo-slider.css" />    
+    <link rel="stylesheet" href="css/nivoslider/themes/default/default.css" />
+    <script type="text/javascript" src="js/nivoslider/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#slider-pilares').nivoSlider({
+                effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
+                animSpeed: 300, // Slide transition speed
+                startSlide: 0, // Set starting Slide (0 index)
+                directionNav: true, // Next & Prev navigation
+                controlNav: false, // 1,2,3... navigation
+                controlNavThumbs: false, // Use thumbnails for Control Nav
+                manualAdvance: true, // Force manual transitions
+                randomStart: false, // Start on a random slide
+            });
+        });
+    </script>
     </head>
 
 <body>
-<div data-role="page" id="pilares-estilo">
-
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $('#slider-pilares').nivoSlider({
-                    effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
-                    animSpeed: 300, // Slide transition speed
-                    startSlide: 0, // Set starting Slide (0 index)
-                    directionNav: true, // Next & Prev navigation
-                    controlNav: false, // 1,2,3... navigation
-                    controlNavThumbs: false, // Use thumbnails for Control Nav
-                    manualAdvance: true, // Force manual transitions
-                    randomStart: false, // Start on a random slide
-                });
-            });
-        </script>
+<div class="efecto-pagina">
+    <a href="index.html" class="link-index"></a>
 
     <div class="contenedor-principal">
         <div class="contenido">
-            <a href="index.html" class="link-index" data-transition="fade" data-direction="reverse"></a>
-            
             <div class="slider-wrapper theme-default">
                 <div id="slider-pilares" class="nivoSlider">
                     <img src="img/bg-estilo.jpg" alt=""/>
@@ -36,7 +49,6 @@
                     <img src="img/bg-seguridad.jpg" alt=""/>
                 </div>
             </div>
-        
         </div>
 
         <div class="botonera">
