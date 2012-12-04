@@ -27,6 +27,9 @@ div.inicio-pronto {background:url(../../img/pronto.jpg) center no-repeat;}
 div.inicio-areas-comunes {background:url(../../img/bg-areas-comunes.jpg) center no-repeat;}
 div.inicio-mapa-nunoa {background:url(../../img/bg-mapa-nunoa.jpg) center top no-repeat;}
 div.inicio-mapa-las-condes {background:url(../../img/bg-mapa-las-condes.jpg) center top no-repeat;}
+div.inicio-mapa-san-miguel {background:url(../../img/bg-mapa-san-miguel.jpg) center top no-repeat;}
+div.inicio-mapa-santiago {background:url(../../img/bg-mapa-santiago.jpg) center top no-repeat;}
+div.inicio-mapa-huechuraba {background:url(../../img/bg-mapa-huechuraba.jpg) center top no-repeat;}
 div.inicio-plantas-piso {background:url(../../img/bg-plantas-piso.jpg) center no-repeat;}
 
 /*---------------------------------------  Div Contenido --------- */
@@ -98,6 +101,7 @@ a.link-dpto-j {width: 305px; height: 160px; top: 377px; left: 100px;}
 a.link-dpto-k {width: 260px; height: 185px; top: 190px; left: 35px;}
 
 /*--------------------------------------- Video -------- */
+body.videos { width: 720px; height:388px; margin: 0; padding: 0; background: #008ac9!important; overflow: hidden!important; }
 a.link-video {position: absolute; width: 480px; height: 300px; top: 220px; left: 450px; text-decoration: none; display: block;}
 
 /*--------------------------------------- Video3D -------- */
@@ -115,7 +119,7 @@ a.nunoa-dpto7, a.nunoa-dpto8, a.nunoa-dpto9, a.nunoa-dpto10, a.nunoa-dpto11, a.n
 a.nunoa-dpto14, a.nunoa-dpto15, a.nunoa-dpto16, a.nunoa-dpto17, a.nunoa-dpto18, a.nunoa-dpto19,
 a.nunoa-dpto20, a.santiago-dpto1, a.santiago-dpto2, a.santiago-dpto3, a.las-condes-dpto1, a.las-condes-dpto2,
 a.las-condes-dpto3, a.las-condes-dpto4, a.las-condes-dpto5, a.san-miguel-dpto1, a.san-miguel-dpto2,
-a.san-miguel-dpto3, a.huechuraba-dpto1, a.huechuraba-dpto2 {width: 30px; height: 30px; position: absolute; text-decoration: none; display: block; -webkit-transform: scale(1) rotate(78deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); background: #CCC; opacity: 0.5;}
+a.san-miguel-dpto3, a.huechuraba-dpto1, a.huechuraba-dpto2 {width: 30px; height: 30px; position: absolute; text-decoration: none; display: block; -webkit-transform: scale(1) rotate(78deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); /*background: #CCC; opacity: 0.5;*/}
 a.mapa-svg-volver {width: 150px; height: 145px; top: 25px; left: 1095px;-webkit-transform: none;}
 
 /*--------- Ñuñoa -------- */
@@ -166,13 +170,22 @@ a.huechuraba-dpto1 {top: 79px; left: 412px;}
 a.huechuraba-dpto2 {top: 547px; left: 1125px;}
 
 /* ////////////////////////////////////// Iframes -------- */
-/*///*/ div.contenido-iframe {background: #797f8b; padding: 30px; margin: 0; height: auto; width: auto; overflow: hidden!important;}
-/*///*/ div.texto-iframe {background: #797f8b; margin: 0; width: 400px; height: auto; font-family: 'Gotham-Book', Arial, Helvetica, sans-serif!important; font-weight:normal; color: #FFF; overflow: hidden!important;}
-/*////////////////////////////////////// Fin-Iframes -------- */
+div.contenido-iframe {background: #797f8b; padding: 30px; margin: 0; height: auto; width: auto; overflow: hidden!important;}
+div.texto-iframe {background: #797f8b; margin: 0; width: 400px; height: auto; font-family: 'Gotham-Book', Arial, Helvetica, sans-serif!important; font-weight:normal; color: #FFF; overflow: hidden!important;}
+
+/*////////////////////////////////////// Iframes Deptos -------- */
+body.dptos { margin: 0; padding: 0; background: transparent; overflow: hidden!important;}
+div.contenedor-iframes {width: 400px; height:445px; margin: 0; padding: 0; background: transparent!important; -webkit-border-radius: 30px 0px 30px 0px; border-radius: 30px 0px 30px 0px; border: 5px #d4d110 solid;}
+div.imagen-dpto { float: left; width: 400px; height: 445px; padding: 0; margin: 0; }
+div.imagen-dpto img {-webkit-border-radius: 25px 0px 25px 0px; border-radius: 25px 0px 25px 0px;}
+/*div.texto-dpto { float: right; background: #008ac9; margin: 0; padding: 0; width: 300px; height: 445px; overflow: hidden!important;}
+div.texto-dpto p { padding: 10px 20px 0 10px; font-family: 'Gotham-Book', Arial, Helvetica, sans-serif!important; font-weight:normal; color: #FFF; text-align: left; font-size: 18px;}
+div.texto-dpto p a {text-decoration: none; color: #FFF; font-size: 25px; font-weight: bold; display: block; width: 200px; height: 50px; background:url(../../img/dptos/360-flecha.png) no-repeat center right; padding: 5px 20px; line-height: 50px;}
+div.imagen-dpto { float: left; width: 400px; height: 445px; background: #008ac9!important; padding: 0; margin: 0;}*/
 
 /*--------------------------------------- Cursor None -------- */
 /*html, body, img, a {cursor: none!important; -moz-user-select: none;-webkit-user-select: none;-webkit-user-drag:none; -khtml-user-select: none; -ms-user-select: none; user-select: none;}
 input, label {cursor: none!important;}*/
 
 div#icono {background:url(../../img/icono-touch.png) no-repeat center center; height: 400px; width: 400px; position: absolute; left: 35%; top: 21%;
-/*margin: -25px 0 0 -25px*/; z-index: 1000;}​
+/*margin: -25px 0 0 -25px*/ z-index: 1000;}​

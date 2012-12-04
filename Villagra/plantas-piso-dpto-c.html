@@ -29,7 +29,17 @@
                 openEffect  : 'elastic',
                 closeEffect : 'elastic',
                 padding     : 0,
-            });        
+            });
+            $(".web-actual").fancybox({
+                closeClick  : true,
+                openEffect  : 'elastic',
+                closeEffect : 'elastic',
+                padding     : 0,
+                height      : 760,
+                width       : 1000,
+                autoSize    : false,
+                closeBtn    : false,
+            });                    
         });
     </script>
     </head>
@@ -41,7 +51,7 @@
 
     <div class="contenedor-principal bg-dpto-c">
         <div class="contenido">
-            <a class="dpto-video link-video" href="img/bg-inicio.jpg" data-ajax="false"></a>        
+            <!-- <a class="dpto-video link-video fancybox.iframe" href="img/bg-inicio.jpg" data-ajax="false"></a> --> 
         </div>
 
         <div class="botonera">
@@ -57,7 +67,7 @@
             </div>
             <div class="botonera-bottom">
                 <nav class="bottom">
-                <a href="http://www.iactual.cl">Sitio Web</a>|
+                <a href="http://www.iactual.cl" class="web-actual fancybox.iframe" data-ajax="false">Sitio Web</a>|
                 <a href="inicio-actual.html">Actual</a>|
                 <a href="inicio-edificio.html" class="current">Edificio</a>|
                 <a href="inicio-cotizacion.html">Cotización</a>|

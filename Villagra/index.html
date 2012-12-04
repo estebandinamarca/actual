@@ -5,21 +5,31 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>Villagra</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Estilo Base -->
+    <link rel="stylesheet" href="css/base/base.css" />
     <!-- Jquery Base -->
 	<script src="js/jquery-1.8.2.min.js"></script> 
     <!-- Jquery Mobile -->
 	<script src="js/jquery.mobile/jquery.mobile.custom.min.js"></script>    
     <link rel="stylesheet" href="css/jquery.mobile/jquery.mobile.custom.structure.css" />
     <link rel="stylesheet" href="css/jquery.mobile/jquery.mobile.custom.theme.min.css" />
-    <!-- Fancybox 
+    <!-- Fancybox --> 
     <script src="js/fancybox/jquery.fancybox.pack.js"></script>
-    <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" /> --> 
-    <!-- Nivoslider 
-    <link rel="stylesheet" href="css/nivoslider/nivo-slider.css" />    
-    <link rel="stylesheet" href="css/nivoslider/themes/default/default.css" />
-    <script type="text/javascript" src="js/nivoslider/jquery.nivo.slider.pack.js"></script>-->
-    <!-- Estilo Base -->
-    <link rel="stylesheet" href="css/base/base.css" />
+    <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" />
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".web-actual").fancybox({
+                closeClick  : true,
+                openEffect  : 'elastic',
+                closeEffect : 'elastic',
+                padding     : 0,
+                height      : 760,
+                width       : 1000,
+                autoSize    : false,
+                closeBtn    : false,
+            });
+        });
+    </script>
     <!-- Efecto Fade -->    
     <script>
     $(document).ready(function() {
@@ -39,7 +49,7 @@
 
         <div class="botonera">
             <nav class="inicio">
-                <a href="http://www.iactual.cl">Sitio Web</a>
+                <a href="http://www.iactual.cl" class="web-actual fancybox.iframe" data-ajax="false">Sitio Web</a>
                 <a href="inicio-actual.html" data-transition="flip">Actual</a>
                 <a href="inicio-edificio.html" data-transition="flip">Edificio</a>
                 <a href="inicio-cotizacion.html" data-transition="flip">Cotización</a>

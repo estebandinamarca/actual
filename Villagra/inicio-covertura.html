@@ -5,10 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Villagra</title> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Jquery Base -->
-    <script src="js/jquery-1.8.2.min.js"></script>
     <!-- Estilo Base -->
     <link rel="stylesheet" href="css/base/base.css" />
+    <!-- Jquery Base -->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <!-- Fancybox --> 
+    <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" />
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".web-actual").fancybox({
+                closeClick  : true,
+                openEffect  : 'elastic',
+                closeEffect : 'elastic',
+                padding     : 0,
+                height      : 760,
+                width       : 1000,
+                autoSize    : false,
+                closeBtn    : false,
+            });
+        });
+    </script>    
     <!-- Efecto Fade -->    
     <script>
     $(document).ready(function() {
@@ -61,7 +78,7 @@
                     l-3.314,0.369l-9.576-0.369l-4.787-2.209l-9.944-0.368l-6.262-2.21l-2.579-3.683l-1.473,3.683l-6.261-1.473l-4.419-3.314
                     l-3.314-4.051l-2.578-4.051l-0.368-2.21L75.978,175.012L75.978,175.012z"/>
                 <a xlink:href="covertura-santiago.html">
-                <path id="santiago" fill="#008ac9" stroke="#FFFFFF" d="M219.576,274.813l13.637,0.487v-4.384l17.58,0.576l23.817,0.397
+                <path id="santiago" fill="#f57b20" stroke="#FFFFFF" d="M219.576,274.813l13.637,0.487v-4.384l17.58,0.576l23.817,0.397
                     l23.136-10.715l-16.804-59.417l-50.103-13.795l0.426,3.323c-4.544-0.104-12.239-6.691-12.663,1.948l1.218,15.829l-16.802,0.974
                     l0.116,8.633l17.556-0.878v10.241l2.195,0.584c-0.537,11.266,0.338,28.172-1.61,33.796l9.07-0.585l0.17,9.655l-10.663-0.049"/>
                 </a>    
@@ -110,7 +127,7 @@
                 <path id="pac" fill="#dedede" stroke="#FFFFFF" d="M233.214,270.917l22.747,0.576l-21.765,56.199l-34.201-14.58l13.535-36.442
                     l-0.489-5.352l6.813,0.119l-0.276,3.377l13.637,0.487L233.214,270.917L233.214,270.917z"/>
                 <a xlink:href="covertura-san-miguel.html">
-                <path id="sanmiguel" fill="#008ac9" stroke="#FFFFFF" d="M234.195,327.692l21.765-56.199l18.628,0.397l7.535,67.513l-6.111,0.08
+                <path id="sanmiguel" fill="#f57b20" stroke="#FFFFFF" d="M234.195,327.692l21.765-56.199l18.628,0.397l7.535,67.513l-6.111,0.08
                     L234.195,327.692L234.195,327.692z"/>
                 </a>    
                 <path id="sanramon" fill="#dedede" stroke="#FFFFFF" d="M282.125,339.403l-6.112,0.078l-4.04-1.15l-12.04,51.732l-2.466,11.707
@@ -126,7 +143,7 @@
                     l-5.615,4.119l-1.123,7.488l-4.307,8.237h1.312l-0.203,6.581l7.09,25.038l17.578-5.584l0.392,2.138l3.108,0.194l9.914-5.249
                     l15.355-1.361l6.998,4.859l14.266-24.134l-3.379-3.664l-24.299-21.771l-8.357-3.11l4.082-11.663L312.27,157.271L312.27,157.271z"/>
                 <a xlink:href="covertura-nunoa.html">           
-                <path id="nunoa" fill="#008ac9" stroke="#FFFFFF" d="M288.033,226.797l17.578-5.584l0.393,2.138l3.107,0.195l9.914-5.249
+                <path id="nunoa" fill="#f57b20" stroke="#FFFFFF" d="M288.033,226.797l17.578-5.584l0.393,2.138l3.107,0.195l9.914-5.249
                     l15.356-1.361l6.996,4.859l14.222-24.134l11.934,7.595l4.127,21.532l-1.615,13.457l-5.563,17.405l-12.562,7.715l-28.17-0.18
                     l-23.506,3.051l-2.494-7.067L288.033,226.797z"/>
                 </a>    
@@ -200,7 +217,7 @@
                     l-10.096-1.188l-3.267-2.672l-5.047-0.298l-7.127-8.908h-2.672l-2.971-2.672l-15.439-0.594l-7.125-5.048l-0.594-4.157l-6.535-7.127
                     L489.169,243.221L489.169,243.221z"/>
                 <a xlink:href="covertura-las-condes.html">          
-                <path id="lascondes" fill="#008ac9" stroke="#FFFFFF" d="M561.5,280.953l-10.096-1.188l-3.267-2.672l-5.049-0.298l-7.127-8.907
+                <path id="lascondes" fill="#f57b20" stroke="#FFFFFF" d="M561.5,280.953l-10.096-1.188l-3.267-2.672l-5.049-0.298l-7.127-8.907
                     h-2.672l-2.969-2.673l-15.441-0.595l-7.125-5.047l-0.594-4.157l-6.533-7.126l-11.461-5.074l0.293-3.777l-3.631-6.828l-5.375-3.922
                     l-1.6-2.179l-3.923-3.486l0.293-7.262l-16.993-14.962l-11.91-2.615l-9.443-4.503l-19.897,2.76l-0.728-6.973l-27.892,3.631
                     l-36.133,0.809l-24.263-21.689l-8.358-3.11l4.084-11.663l95.205-40.729l9.438-11.538l22.025-10.489l12.323-1.311l8.13-5.244
@@ -222,7 +239,7 @@
                     l-5.353-1.458l-4.377,1.945l-0.485,3.892l3.893,6.081l10.945,8.513l-3.646,1.217l0.729,4.863l-4.377,2.676l-3.649-8.756
                     l-2.918,0.243l-2.435,2.433l-7.781,3.892l-0.485,7.054l2.918,3.647l-10.215,5.838l3.162,5.107l-7.539,6.566L363.289,73.968z"/>
                 <a xlink:href="covertura-huechuraba.html">         
-                <path id="huechuraba" fill="#008ac9" stroke="#FFFFFF" d="M199.577,63.725v6.854l5.948,16.813l7.874,1.234l36.784,16.149
+                <path id="huechuraba" fill="#f57b20" stroke="#FFFFFF" d="M199.577,63.725v6.854l5.948,16.813l7.874,1.234l36.784,16.149
                     l25.909,12.341l39.982,31.475c0.469-3.565-0.391-7.355,0.346-10.908l4.52-6.634l5.076-4.229l0.209-5.499l0.424,0.706l-6.768-6.767
                     l-3.104,0.563l-4.512-3.666h7.896l0.281-4.229l-10.148-1.128l0.563-2.256l6.769-7.049l-7.61-0.847l-0.849,2.538h-3.383l-0.563,1.41
                     l-3.103-0.563l-1.129,4.511l-14.663-6.204l1.974-15.226l-4.229-5.357l-5.076-0.282l-5.921,3.666l-4.229,9.306l-4.511-0.563
@@ -480,7 +497,7 @@
             </div>
             <div class="botonera-bottom">
                 <nav class="bottom">
-                <a href="http://www.iactual.cl">Sitio Web</a>|
+                <a href="http://www.iactual.cl" class="web-actual fancybox.iframe" data-ajax="false">Sitio Web</a>|
                 <a href="inicio-actual.html" class="current">Actual</a>|
                 <a href="inicio-edificio.html">Edificio</a>|
                 <a href="inicio-cotizacion.html">Cotización</a>|

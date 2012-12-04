@@ -14,7 +14,7 @@
     $(document).ready(function() {
         $('.efecto-pagina').css("display", "none");
         $('.efecto-pagina').fadeIn('slow');
-    //  $('#icono').fadeOut(2300); 
+        $('#icono').fadeOut(2300); 
       });
     </script>
     <!-- Fancybox -->
@@ -23,48 +23,57 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $(".dpto").fancybox({
-                closeClick  : false,
+                closeClick  : true,
                 openEffect  : 'elastic',
                 closeEffect : 'elastic',
                 padding     : 0,
-                height      : 445,
-                width       : 700,
+                height      : 455,
+                width       : 410,
                 autoSize    : false,
                 closeBtn    : false,
             });
+            $(".web-actual").fancybox({
+                closeClick  : true,
+                openEffect  : 'elastic',
+                closeEffect : 'elastic',
+                padding     : 0,
+                height      : 760,
+                width       : 1000,
+                autoSize    : false,
+                closeBtn    : false,
+            });            
         });
     </script>
     </head>
 
 <body>
-<!-- <div id="icono"></div> --> 
+<div id="icono"></div> 
 <div class="efecto-pagina">
+    <a href="index.html" class="link-index"></a>
+    <a href="inicio-covertura.html" class="mapa-svg-volver"></a>   
 
     <div class="contenedor-principal inicio-mapa-nunoa">
-        <a href="index.html" class="link-index"></a>
-        <a href="inicio-covertura.html" class="mapa-svg-volver"></a>        
-
         <div class="contenido">
-        <a href="#" class="dpto nunoa-dpto1"></a>
-        <a href="#" class="dpto nunoa-dpto2"></a>
-        <a href="#" class="dpto nunoa-dpto3"></a>
-        <a href="#" class="dpto nunoa-dpto4"></a>
-        <a href="#" class="dpto nunoa-dpto5"></a>
-        <a href="#" class="dpto nunoa-dpto6"></a>
-        <a href="#" class="dpto nunoa-dpto7"></a>
-        <a href="#" class="dpto nunoa-dpto8"></a>
-        <a href="#" class="dpto nunoa-dpto9"></a>
-        <a href="#" class="dpto nunoa-dpto10"></a>
-        <a href="#" class="dpto nunoa-dpto11"></a>
-        <a href="#" class="dpto nunoa-dpto12"></a>
-        <a href="#" class="dpto nunoa-dpto13"></a>
-        <a href="#" class="dpto nunoa-dpto14"></a>
-        <a href="#" class="dpto nunoa-dpto15"></a>
-        <a href="#" class="dpto nunoa-dpto16"></a>
-        <a href="#" class="dpto nunoa-dpto17"></a>
-        <a href="#" class="dpto nunoa-dpto18"></a>
-        <a href="#" class="dpto nunoa-dpto19"></a>
-        <a href="#" class="dpto nunoa-dpto20"></a>        
+        <a href="iframes/nunoa-dpto1.html" class="dpto nunoa-dpto1 fancybox.iframe"></a>
+        <a href="iframes/nunoa-dpto2.html" class="dpto nunoa-dpto2 fancybox.iframe"></a>
+        <a href="iframes/nunoa-dpto3.html" class="dpto nunoa-dpto3 fancybox.iframe"></a>
+        <a href="iframes/nunoa-dpto4.html" class="dpto nunoa-dpto4 fancybox.iframe"></a>
+        <a href="iframes/nunoa-dpto5.html" class="dpto nunoa-dpto5 fancybox.iframe"></a>
+        <a href="iframes/nunoa-dpto6.html" class="dpto nunoa-dpto6 fancybox.iframe"></a>
+        <a href="iframes/nunoa-dpto7.html" class="dpto nunoa-dpto7 fancybox.iframe"></a>
+        <a href="iframes/nunoa-dpto8.html" class="dpto nunoa-dpto8 fancybox.iframe"></a>
+        <a href="iframes/nunoa-dpto9.html" class="dpto nunoa-dpto9 fancybox.iframe"></a>
+        <a href="iframes/nunoa-dpto10.html" class="dpto nunoa-dpto10 fancybox.iframe"></a>
+        <a href="iframes/nunoa-dpto11.html" class="dpto nunoa-dpto11 fancybox.iframe"></a>
+        <a href="iframes/nunoa-dpto12.html" class="dpto nunoa-dpto12 fancybox.iframe"></a>
+        <a href="iframes/nunoa-dpto13.html" class="dpto nunoa-dpto13 fancybox.iframe"></a>
+        <a href="iframes/nunoa-dpto14.html" class="dpto nunoa-dpto14 fancybox.iframe"></a>
+        <a href="iframes/nunoa-dpto15.html" class="dpto nunoa-dpto15 fancybox.iframe"></a>
+        <a href="iframes/nunoa-dpto16.html" class="dpto nunoa-dpto16 fancybox.iframe"></a>
+        <a href="iframes/nunoa-dpto17.html" class="dpto nunoa-dpto17 fancybox.iframe"></a>
+        <a href="iframes/nunoa-dpto18.html" class="dpto nunoa-dpto18 fancybox.iframe"></a>
+        <a href="iframes/nunoa-dpto19.html" class="dpto nunoa-dpto19 fancybox.iframe"></a>
+        <a href="iframes/nunoa-dpto20.html" class="dpto nunoa-dpto20 fancybox.iframe"></a>        
         </div>
 
         <div class="botonera">
@@ -79,7 +88,7 @@
             </div>
             <div class="botonera-bottom">
                 <nav class="bottom">
-                <a href="http://www.iactual.cl">Sitio Web</a>|
+                <a href="http://www.iactual.cl" class="web-actual fancybox.iframe" data-ajax="false">Sitio Web</a>|
                 <a href="inicio-actual.html" class="current">Actual</a>|
                 <a href="inicio-edificio.html">Edificio</a>|
                 <a href="inicio-cotizacion.html">Cotización</a>|

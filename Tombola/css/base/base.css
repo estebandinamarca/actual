@@ -1,0 +1,59 @@
+/*
+* Estilos para Villagra:
+* Pantalla 32"
+* Resolución: 1366px x 768px.
+*/
+
+/* ===============================   Reset Normalize  ================================= */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary {display: block;} audio,canvas,video {display: inline-block;*display: inline;*zoom: 1;} audio:not([controls]) {display: none; height: 0;} [hidden] {display: none;} html {font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} html,button,input,select,textarea {font-family: sans-serif;} body {margin: 0;} a:focus {outline: thin dotted;} a:active,a:hover {outline: 0;} h1 {font-size: 2em;margin: 0.67em 0;} h2 {font-size: 1.5em;margin: 0.83em 0;} h3 {font-size: 1.17em; margin: 1em 0;} h4 {font-size: 1em;margin: 1.33em 0;} h5 {font-size: 0.83em; margin: 1.67em 0;} h6 {font-size: 0.75em; margin: 2.33em 0;} abbr[title] {border-bottom: 1px dotted;} b,strong {font-weight: bold;} blockquote { margin: 1em 40px;} dfn {font-style: italic;} mark {background: #ff0; color: #000;} p,pre { margin: 1em 0;} code,kbd,pre,samp { font-family: monospace, serif; _font-family: 'courier new', monospace;  font-size: 1em;} pre { white-space: pre; white-space: pre-wrap;word-wrap: break-word;} q {quotes: none;} q:before,q:after {content: '';content: none;} small {font-size: 75%;} sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; } sup { top: -0.5em;} sub { bottom: -0.25em;} dl,menu,ol,ul { margin: 1em 0;} dd {margin: 0 0 0 40px;} menu,ol,ul { padding: 0 0 0 40px;} nav ul,nav ol {list-style: none; list-style-image: none;} img {border: 0; -ms-interpolation-mode: bicubic;} svg:not(:root) { overflow: hidden;} figure { margin: 0;} form {margin: 0;} fieldset { border: 1px solid #c0c0c0; margin: 0 2px;  padding: 0.35em 0.625em 0.75em;} legend { border: 0; padding: 0; white-space: normal; *margin-left: -7px;} button,input,select,textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle;} button,input {line-height: normal;} button,html input[type="button"],input[type="reset"],input[type="submit"] { -webkit-appearance: button; cursor: none!important;*overflow: visible;} button[disabled],input[disabled] {cursor: default;} input[type="checkbox"],input[type="radio"] {box-sizing: border-box; padding: 0;*height: 13px; *width: 13px;} input[type="search"] {-webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {-webkit-appearance: none;} button::-moz-focus-inner,input::-moz-focus-inner { border: 0; padding: 0;} textarea {overflow: auto;vertical-align: top;} table {border-collapse: collapse; border-spacing: 0;}
+
+/* ------------------------------------------ Fontface Gotham -------- */
+@font-face {font-family: 'GothamRounded-Medium'; src: url('../../fonts/sgothamrnd-medium.eot'); src: url('../../fonts/gothamrnd-medium.eot?#iefix') format('embedded-opentype'), url('../../fonts/gothamrnd-medium.woff') format('woff'), url('../../fonts/gothamrnd-medium.ttf') format('truetype'), url('../../fonts/gothamrnd-medium.svg#gothamrnd-medium') format('svg'); font-weight: normal; font-style: normal;}
+@font-face {font-family: 'Gotham-Light'; src: url('../../fonts/gotham-light.eot'); src: url('../../fonts/gotham-light.eot?#iefix') format('embedded-opentype'),url('../../fonts/gotham-light.woff') format('woff'), url('../../fonts/gotham-light.ttf') format('truetype'), url('../../fonts/gotham-light.svg#gotham-light') format('svg'); font-weight: normal; font-style: normal;}
+@font-face {font-family: 'Gotham-Book'; src: url('../../fonts/gotham-book.eot'); src: url('../../fonts/gotham-book.eot?#iefix') format('embedded-opentype'),url('../../fonts/gotham-book.woff') format('woff'), url('../../fonts/gotham-book.ttf') format('truetype'), url('../../fonts/gotham-book.svg#gotham-book') format('svg'); font-weight: normal; font-style: normal;}
+
+/*---------------------------------------  Estilos Generales --------- */
+body {text-align:center; background-color:#E7E4D9; font-family: 'Gotham-Book';}
+body, a {font-weight:normal; text-shadow:none; text-decoration:none; overflow: hidden; }
+p {font-size:12px; color:#666;}
+header {width:1366px; height:250px; float:left; text-align:center;}
+
+/*---------------------------------------  Backgrounds Páginas --------- */
+div.contenedor-principal {width:1366px; height:768px; overflow:hidden;}
+div.inicio {background:url(../../img/bg-inicio.jpg) center no-repeat;}
+
+div.inicio-beneficios {background:url(../../img/bg-beneficios.jpg) center no-repeat;}
+div.inicio-pilares {background:url(../../img/bg-pilares.jpg) center no-repeat;}
+div.inicio-calidad360 {background:url(../../img/bg-calidad360.jpg) center no-repeat;}
+div.inicio-video {background:url(../../img/bg-video.jpg) center no-repeat;}
+div.inicio-mapa-nunoa {background:url(../../img/bg-mapa-nunoa.jpg) center top no-repeat;}
+div.inicio-mapa-las-condes {background:url(../../img/bg-mapa-las-condes.jpg) center top no-repeat;}
+div.inicio-mapa-san-miguel {background:url(../../img/bg-mapa-san-miguel.jpg) center top no-repeat;}
+div.inicio-mapa-santiago {background:url(../../img/bg-mapa-santiago.jpg) center top no-repeat;}
+div.inicio-mapa-huechuraba {background:url(../../img/bg-mapa-huechuraba.jpg) center top no-repeat;}
+
+/*---------------------------------------  Div Contenido --------- */
+div.contenido {width:1366px; height:675px; float:left; text-align:center; padding:0 20px; margin-top:40px;}
+ul.numeros {background:#262626; border:3px #FFF;border-radius: 15px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border:5px solid #FFF; padding:0; margin:0 auto; width:600px!important;}
+ul.numeros li {width:560px; color:#FFF; list-style:none; font-family: 'GothamRounded-Medium'; font-weight:bold; font-size:200px; padding:20px;}
+#num {width:600px; float:left; margin-right:40px;}
+#boton {width:600px; float:right;}
+
+/*BOTON GANAR*/
+
+#btn_ganar {background-image: linear-gradient(bottom, rgb(102,221,126) 20%, rgb(157,234,172) 80%); background-image: -o-linear-gradient(bottom, rgb(102,221,126) 20%, rgb(157,234,172) 80%); background-image: -moz-linear-gradient(bottom, rgb(102,221,126) 20%, rgb(157,234,172) 80%); background-image: -webkit-linear-gradient(bottom, rgb(102,221,126) 20%, rgb(157,234,172) 80%); background-image: -ms-linear-gradient(bottom, rgb(102,221,126) 20%, rgb(157,234,172) 80%);
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.2, rgb(102,221,126)),
+	color-stop(0.8, rgb(157,234,172))
+); border:1px solid #66DD7D; color:#FFF; text-shadow:2px 1px 2px #666; font-weight:bold; font-size:60px; padding:100px 30px; cursor:pointer; width:600px;font-family: 'GothamRounded-Medium';}
+
+#btn_ganar:hover { background:none; background-color:#66DD7D;}
+
+footer {float:left; width:100%; margin-top:40px;}
+
+/*--------------------------------------- Cursor None -------- */
+html, body, img, a {cursor: none!important; -moz-user-select: none;-webkit-user-select: none;-webkit-user-drag:none; -khtml-user-select: none; -ms-user-select: none; user-select: none;}
+input, label {cursor: none!important;}
