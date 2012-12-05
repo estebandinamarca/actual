@@ -75,8 +75,8 @@ a.link-next, a.link-prev {position: absolute; text-decoration: none; display: bl
 a.link-next {width: 90px; height: 130px; top: 310px; left: 251px;}
 a.link-prev {width: 90px; height: 130px; top: 310px; left: 5px;}
 
-a.video-proyecto {width: 260px; height: 170px; text-decoration: none; display: block; position: absolute; top: 230px; left: 1015px; z-index: 2;}
-/*a.video-proyecto {width: 260px; height: 170px; text-decoration: none; display: block; margin: 230px 0 0 1015px;}*/
+a.video-proyecto {width: 260px; height: 170px; text-decoration: none; display: block; margin: 230px 0 0 1015px;}
+/*a.video-proyecto {width: 260px; height: 170px; text-decoration: none; display: block; position: absolute; top: 230px; left: 1015px; z-index: 2;}*/
 
 /*--------------------------------------- Beneficios -------- */
 a.link-beneficios-novios, a.link-beneficios-amigos, a.link-beneficios-hogar, a.link-beneficios-propiedad {position: absolute; text-decoration: none; display: block; -webkit-transform: scale(1) rotate(78deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);}
@@ -232,5 +232,5 @@ div.texto-dpto p a {text-decoration: none; color: #FFF; font-size: 25px; font-we
 div.imagen-dpto { float: left; width: 400px; height: 445px; background: #008ac9!important; padding: 0; margin: 0;}
 
 /*--------------------------------------- Cursor None -------- */
-/*html, body, img, a {cursor: none!important; -moz-user-select: none;-webkit-user-select: none;-webkit-user-drag:none; -khtml-user-select: none; -ms-user-select: none; user-select: none;}
-input, label {cursor: none!important;}*/
+html, body, img, a {cursor: none!important; -moz-user-select: none;-webkit-user-select: none;-webkit-user-drag:none; -khtml-user-select: none; -ms-user-select: none; user-select: none;}
+input, label {cursor: none!important;}

@@ -11,7 +11,14 @@
     <!-- Jquery Base -->
     <script src="js/jquery-1.8.2.min.js"></script> 
     <!-- Estilo Base -->
-    <link rel="stylesheet" href="css/base/base.css" />
+    <link rel="stylesheet" href="css/base/base.css" />    
+    <!-- Efecto Fade -->    
+    <script>
+    $(document).ready(function() {
+        $('.efecto-pagina').css("display", "none");
+        $('.efecto-pagina').fadeIn('fast'); 
+      });
+    </script>        
     <!-- Fancybox --> 
     <script src="js/fancybox/jquery.fancybox.pack.js"></script>
     <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" />
@@ -39,7 +46,6 @@
             });
         });
     </script>
-
     <!-- iScroll 4 -->
     <script type="text/javascript" src="js/iscroll/iscroll.js"></script>
     <script type="text/javascript">
@@ -56,15 +62,15 @@
          });
     }
     document.addEventListener('DOMContentLoaded', loaded, false);
+    </script>  
+    <!-- Time Out --> 
+    <script type="text/JavaScript">
+    var timeout;
+    document.onmousemove = function(){
+    clearTimeout(timeout);
+    timeout = setTimeout(function(){top.location.href='protector.html'}, 280000);
+    }
     </script>
-
-    <!-- Efecto Fade -->    
-    <script>
-    $(document).ready(function() {
-        $('.efecto-pagina').css("display", "none");
-        $('.efecto-pagina').fadeIn('fast'); 
-      });
-    </script>      
     </head>
 
 <body>
