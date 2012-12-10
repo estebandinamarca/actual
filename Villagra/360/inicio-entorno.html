@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0" />
+	<title>360</title>
+    <!-- jQuery Base -->
+    <script src="js/jquery-1.7.min.js"></script>
+	<!-- Sólo para 360 -->
+	<link rel="stylesheet" href="css/reset.css" media="screen" type="text/css" />
+	<link rel="stylesheet" href="css/threesixty.css" media="screen" type="text/css" />
+	<script src="js/heartcode-canvasloader-min.js"></script>
+    <script src="js/threesixty.js"></script>
+    <!-- Estilo Base -->
+	<link rel="stylesheet" href="../css/base/base.css" media="screen" type="text/css" />
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="../css/fancybox/jquery.fancybox.css" />
+    <script src="../js/fancybox/jquery.fancybox.pack.js"></script>    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".web-actual").fancybox({
+                closeClick  : true,
+                openEffect  : 'elastic',
+                closeEffect : 'elastic',
+                padding     : 0,
+                height      : 760,
+                width       : 1000,
+                autoSize    : false,
+                closeBtn    : false,
+            });
+        });
+    </script>    
+</head>
+<body>
+	<a href="javascript:history.back()" rel="external" class="volver-btn">Volver</a>
+
+        <div class="botonera">
+            <div class="botonera-top">
+                <nav class="top">
+                <a href="inicio-entorno.html" rel="external" class="current">Entorno</a>|
+                <a href="../inicio-video3d.html" rel="external">Video 3D</a>|
+                <a href="../inicio-lounge.html" rel="external">Lounge</a>|
+                <a href="../inicio-plantas-piso.html" rel="external">Plantas Piso</a>|
+                <a href="../inicio-realidad-virtual.html" rel="external">Tú Realidad Virtual</a>|
+                <a href="../inicio-areas-comunes.html" rel="external">Áreas Comunes</a>                          
+                </nav>
+            </div>
+            <div class="botonera-bottom">
+                <nav class="bottom">
+                <a href="http://www.iactual.cl" class="web-actual fancybox.iframe" data-ajax="false">Sitio Web</a>|
+                <a href="../inicio-actual.html">Actual</a>|
+                <a href="../inicio-edificio.html" class="current">Edificio</a>|
+                <a href="../inicio-cotizacion.html">Cotización</a>|
+                <a href="../tu.html" class="current">Tú!</a>
+                </nav>
+            </div>
+        </div>
+	
+	<div id="threesixty" style="overflow:hidden">
+		<div id="spinner" style="overflow:hidden">
+			<span>0%</span>
+		</div>
+		<ol id="threesixty_images" style="overflow:hidden"></ol>
+	</div>
+</body>
+</html>

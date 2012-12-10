@@ -36,7 +36,15 @@
         $('.efecto-pagina').css("display", "none");
         $('.efecto-pagina').fadeIn('slow'); 
       });
-    </script>    
+    </script>
+    <!-- Time Out -->
+    <script type="text/JavaScript">
+    var timeout;
+    document.onmousemove = function(){
+    clearTimeout(timeout);
+    timeout = setTimeout(function(){top.location.href='protector.html'}, 280000);
+    }
+    </script>            
     </head>
 
 <body>
@@ -53,7 +61,7 @@
                 <a href="inicio-video3d.html" rel="external">Video 3D</a>|
                 <a href="inicio-lounge.html" rel="external">Lounge</a>|
                 <a href="inicio-plantas-piso.html" rel="external">Plantas Piso</a>|
-                <a href="realidad-virtual.html" rel="external">Tú Realidad Virtual</a>|
+                <!-- <a href="realidad-virtual.html" rel="external">Tú Realidad Virtual</a>| -->
                 <a href="inicio-areas-comunes.html" rel="external">Áreas Comunes</a>                          
                 </nav>
             </div>
@@ -62,8 +70,8 @@
                 <a href="http://www.iactual.cl" class="web-actual fancybox.iframe" data-ajax="false">Sitio Web</a>|
                 <a href="inicio-actual.html">Actual</a>|
                 <a href="inicio-edificio.html">Edificio</a>|
-                <a href="inicio-cotizacion.html" class="current">Cotización</a>|
-                <a href="tu.html" class="current">Tú!</a>
+                <!-- <a href="inicio-cotizacion.html" class="current">Cotización</a>|
+                <a href="tu.html" class="current">Tú!</a> -->
                 </nav>
             </div>
         </div>      

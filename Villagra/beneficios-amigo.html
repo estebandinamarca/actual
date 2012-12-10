@@ -50,7 +50,15 @@
                 closeBtn    : false,
             });
         });
-    </script>   
+    </script>
+    <!-- Time Out -->
+    <script type="text/JavaScript">
+    var timeout;
+    document.onmousemove = function(){
+    clearTimeout(timeout);
+    timeout = setTimeout(function(){top.location.href='protector.html'}, 280000);
+    }
+    </script>           
     </head>
 
 <body>
@@ -84,8 +92,8 @@
                 <a href="http://www.iactual.cl" class="web-actual fancybox.iframe" data-ajax="false">Sitio Web</a>|
                 <a href="inicio-actual.html" class="current">Actual</a>|
                 <a href="inicio-edificio.html">Edificio</a>|
-                <a href="inicio-cotizacion.html">Cotización</a>|
-                <a href="tu.html" class="current">Tú!</a>
+                <!-- <a href="inicio-cotizacion.html">Cotización</a>| -->
+                <!-- <a href="tu.html" class="current">Tú!</a> -->
                 </nav>
             </div>
         </div>      

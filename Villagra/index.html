@@ -36,7 +36,15 @@
         $('.efecto-pagina').css("display", "none");
         $('.efecto-pagina').fadeIn('slow'); 
       });
-    </script>   
+    </script>
+    <!-- Time Out -->
+    <script type="text/JavaScript">
+    var timeout;
+    document.onmousemove = function(){
+    clearTimeout(timeout);
+    timeout = setTimeout(function(){top.location.href='protector.html'}, 280000);
+    }
+    </script>           
     </head>
 
 <body>
@@ -52,8 +60,8 @@
                 <a href="http://www.iactual.cl" class="web-actual fancybox.iframe" data-ajax="false">Sitio Web</a>
                 <a href="inicio-actual.html" data-transition="flip">Actual</a>
                 <a href="inicio-edificio.html" data-transition="flip">Edificio</a>
-                <a href="inicio-cotizacion.html" data-transition="flip">Cotización</a>
-                <a href="tu.html" class="current" data-transition="flip">Tu!</a>
+                <!-- <a href="inicio-cotizacion.html" data-transition="flip">Cotización</a>
+                <a href="tu.html" class="current" data-transition="flip">Tu!</a> -->
             </nav>
         </div>
 

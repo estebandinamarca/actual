@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Villagra</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Jquery Base -->
+    <script src="js/jquery-1.8.2.min.js"></script> 
+    <!-- Estilo Base -->
+    <link rel="stylesheet" href="css/base/base.css" />
+    <!-- Efecto Fade -->    
+    <script>
+    $(document).ready(function() {
+        $('.efecto-pagina').css("display", "none");
+        $('.efecto-pagina').fadeIn('slow'); 
+      });
+    </script>     
+    </head>
+
+<body>
+<div data-role="page" id="inicio-edificio" class="efecto-pagina">
+    <a href="index.html" class="link-index" data-transition="fade" data-direction="reverse"></a>
+    
+    <div class="contenedor-principal inicio-edificio">
+        <div class="contenido"></div>
+
+        <div class="botonera">
+            <div class="botonera-top">
+                <nav class="top">
+                <a href="360/inicio-entorno.html" rel="external">Entorno</a>|
+                <a href="inicio-video3d.html" rel="external">Video 3D</a>|
+                <a href="inicio-lounge.html" rel="external">Lounge</a>|
+                <a href="inicio-plantas-piso.html" rel="external">Plantas Piso</a>|
+                <a href="inicio-realidad-virtual.html" rel="external">Tú Realidad Virtual</a>|
+                <a href="inicio-areas-comunes.html" rel="external">Áreas Comunes</a>                          
+                </nav>
+            </div>
+            <div class="botonera-bottom">
+                <nav class="bottom">
+                <a href="http://www.iactual.cl" class="web-actual fancybox.iframe" data-ajax="false">Sitio Web</a>|
+                <a href="inicio-actual.html">Actual</a>|
+                <a href="inicio-edificio.html" class="current">Edificio</a>|
+                <a href="inicio-cotizacion.html">Cotización</a>|
+                <a href="tu.html" class="current">Tú!</a>
+                </nav>
+            </div>
+        </div>      
+    </div>
+</div>
+
+</body>
+</html>

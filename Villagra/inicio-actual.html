@@ -13,6 +13,13 @@
     <script src="js/jquery.mobile/jquery.mobile.custom.min.js"></script>    
     <link rel="stylesheet" href="css/jquery.mobile/jquery.mobile.custom.structure.css" />
     <link rel="stylesheet" href="css/jquery.mobile/jquery.mobile.custom.theme.min.css" />
+    <!-- Efecto Fade -->    
+    <script>
+    $(document).ready(function() {
+        $('.efecto-pagina').css("display", "none");
+        $('.efecto-pagina').fadeIn('slow'); 
+      });
+    </script>
     <!-- Fancybox --> 
     <script src="js/fancybox/jquery.fancybox.pack.js"></script>
     <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" />
@@ -34,13 +41,14 @@
     <link rel="stylesheet" href="css/nivoslider/nivo-slider.css" />    
     <link rel="stylesheet" href="css/nivoslider/themes/default/default.css" />
     <script type="text/javascript" src="js/nivoslider/jquery.nivo.slider.pack.js"></script>
-    <!-- Efecto Fade -->    
-    <script>
-    $(document).ready(function() {
-        $('.efecto-pagina').css("display", "none");
-        $('.efecto-pagina').fadeIn('slow'); 
-      });
-    </script> 
+    <!-- Time Out -->
+    <script type="text/JavaScript">
+    var timeout;
+    document.onmousemove = function(){
+    clearTimeout(timeout);
+    timeout = setTimeout(function(){top.location.href='protector.html'}, 280000);
+    }
+    </script>       
     </head>
 
 <body>
@@ -65,8 +73,8 @@
                 <a href="http://www.iactual.cl" class="web-actual fancybox.iframe" data-ajax="false">Sitio Web</a>|
                 <a href="inicio-actual.html" class="current">Actual</a>|
                 <a href="inicio-edificio.html">Edificio</a>|
-                <a href="inicio-cotizacion.html">Cotización</a>|
-                <a href="tu.html" class="current">Tú!</a>
+                <!-- <a href="inicio-cotizacion.html">Cotización</a>|
+                <a href="tu.html" class="current">Tú!</a> -->
                 </nav>
             </div>
         </div>      
