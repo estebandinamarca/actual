@@ -203,7 +203,7 @@ div#icono {background:url(../../img/icono-touch.png) no-repeat center center; he
 
 /*--------------------------------------- iScroll4 -------- */
 ul,li {padding:0px; margin:0;}
-#wrapper { width:1366px; height:768px; float:left; position:relative; z-index:1; overflow:hidden; background: transparent!important; -webkit-border-radius:10px; -moz-border-radius:10px; -o-border-radius:10px; 	border-radius:10px; background:#e3e3e3;}
+#wrapper {width:1366px; height:768px; float:left; position:relative; z-index:1; overflow:hidden; background: transparent!important; -webkit-border-radius:10px; -moz-border-radius:10px; -o-border-radius:10px; 	border-radius:10px; background:#e3e3e3;}
 #scroller {width:2732px; height:100%; float:left; padding:0;}
 .scroller-tres {width:4098px!important;}
 .scroller-cuatro {width:5464px!important;}
