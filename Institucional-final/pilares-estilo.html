@@ -7,13 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Jquery Base -->
     <script src="js/jquery-1.8.2.min.js"></script>     
-    <!-- Supersized -->
-    <link rel="stylesheet" href="css/supersized/supersized.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/supersized/supersized.shutter.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="js/supersized/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="js/supersized/supersized.3.2.7.min.js"></script>
-    <script type="text/javascript" src="js/supersized/supersized.shutter.min.js"></script>
-    <!-- Fancybox --> 
+    <!-- Swipeview -->
+    <link rel="stylesheet" href="css/swipeview/style.css" />
+    <script src="js/swipeview/swipeview.js"></script>
+    <!-- Estilo Base -->
+    <link rel="stylesheet" href="css/base/base.css" />
+    <!-- Fancybox -->
     <script src="js/fancybox/jquery.fancybox.pack.js"></script>
     <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" />
     <script type="text/javascript">
@@ -29,34 +28,14 @@
                 closeBtn    : false,
             });
         });
-    </script>   
-    <!-- Estilo Base -->
-    <link rel="stylesheet" href="css/base/base.css" />
+    </script>
     <!-- Efecto Fade -->
     <script>
     $(document).ready(function() {
         $('.efecto-pagina').css("display", "none");
-        $('.efecto-pagina').fadeIn('slow'); 
+        $('.efecto-pagina').fadeIn(100);
+        $('.iconolr').fadeOut(2400);         
       });
-    </script>
-
-    <script type="text/javascript">
-    jQuery(function($){
-        $.supersized({
-            // Functionality
-            slide_interval     :   3000,       // Length between transitions
-            transition         :   1,          // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-            transition_speed   :   160,        // Speed of transition
-            autoplay           :   0,
-            // Components                           
-            slide_links        :   'blank',    // Individual links for each slide (Options: false, 'num', 'name', 'blank')
-            slides             :   [           // Slideshow Images
-                                        {image : 'img/bg-estilo.jpg'},
-                                        {image : 'img/bg-seguridad.jpg'},
-                                        {image : 'img/bg-medio-ambiente.jpg'}
-                                    ]
-        });
-    });
     </script>
     <!-- Time Out --> 
     <script type="text/JavaScript">
@@ -69,14 +48,18 @@
     </head>
 
 <body>
+<div class="iconolr"></div>  
 <div class="efecto-pagina">
 
     <div class="contenedor-principal">
-        <div class="contenido">
-            <!--Arrow Navigation-->
-            <!-- <a id="prevslide" class="load-item prevslide-blue"></a> -->
-            <a id="nextslide" class="load-item nextslide-blue"></a>    
-        </div>
+
+    <div id="wrapper"></div>
+        <ul id="nav-swipeview">
+            <li id="prev" class="pilares-prev" onclick="gallery.prev()"><img src="img/back-blue.png"></li>
+            <li id="next" class="pilares-next" onclick="gallery.next()"><img src="img/forward-blue.png"></li>
+        </ul>
+
+        <!-- <div class="contenido"></div> -->
 
         <ul class="botonera-horizontal">
             <li class="sitio-web"><a class="web-actual fancybox.iframe" href="http://www.iactual.cl" data-ajax="false">Sitio Web</a></li>
@@ -97,6 +80,88 @@
         </div>      
     </div>
 </div>
+
+<script type="text/javascript">
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+var gallery,
+    el,
+    i,
+    page,
+    dots = document.querySelectorAll('#nav-swipeview li'),
+    slides = [
+        {
+            img: 'img/bg-estilo.jpg',
+            width: 1366,
+            height: 768,
+            //desc: 'Piazza del Duomo, Florence, Italy'
+        },
+        {
+            img: 'img/bg-seguridad.jpg',
+            width: 1366,
+            height: 768,
+            //desc: 'Tuscan Landscape'
+        },
+        {
+            img: 'img/bg-medio-ambiente.jpg',
+            width: 1366,
+            height: 768,
+            //desc: 'Colosseo, Rome, Italy'
+        },
+    ];
+
+gallery = new SwipeView('#wrapper', { numberOfPages: slides.length });
+
+// Load initial data
+for (i=0; i<3; i++) {
+    page = i==0 ? slides.length-1 : i-1;
+    el = document.createElement('img');
+    el.className = 'loading';
+    el.src = slides[page].img;
+    el.width = slides[page].width;
+    el.height = slides[page].height;
+    el.onload = function () { this.className = ''; }
+    gallery.masterPages[i].appendChild(el);
+
+    //el = document.createElement('span');
+    //el.innerHTML = slides[page].desc;
+    //gallery.masterPages[i].appendChild(el)
+}
+
+gallery.onFlip(function () {
+    var el,
+        upcoming,
+        i;
+
+    for (i=0; i<3; i++) {
+        upcoming = gallery.masterPages[i].dataset.upcomingPageIndex;
+
+        if (upcoming != gallery.masterPages[i].dataset.pageIndex) {
+            el = gallery.masterPages[i].querySelector('img');
+            el.className = 'loading';
+            el.src = slides[upcoming].img;
+            el.width = slides[upcoming].width;
+            el.height = slides[upcoming].height;
+
+            //el = gallery.masterPages[i].querySelector('span');
+            //el.innerHTML = slides[upcoming].desc;
+        }
+    }
+    
+    // document.querySelector('#nav .selected').className = '';
+    // dots[gallery.pageIndex+1].className = 'selected';
+});
+
+gallery.onMoveOut(function () {
+    gallery.masterPages[gallery.currentMasterPage].className = gallery.masterPages[gallery.currentMasterPage].className.replace(/(^|\s)swipeview-active(\s|$)/, '');
+});
+
+gallery.onMoveIn(function () {
+    var className = gallery.masterPages[gallery.currentMasterPage].className;
+    /(^|\s)swipeview-active(\s|$)/.test(className) || (gallery.masterPages[gallery.currentMasterPage].className = !className ? 'swipeview-active' : className + ' swipeview-active');
+});
+
+</script>
 
 </body>
 </html>
