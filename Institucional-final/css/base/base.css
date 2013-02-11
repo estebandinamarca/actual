@@ -1,4 +1,4 @@
-/*
+﻿/*
 * Estilos para Villagra:
 * Pantalla 32"
 * Resolución: 1366px x 768px.
@@ -51,6 +51,8 @@ nav.top a {text-decoration:none; color:#FFF; font-weight:normal; padding:0 14px;
 nav.top a:first-child {padding-left:20px; border-left: none;}
 nav.top a.current {color:#1eb3e4;}
 nav.inicio a.current {color: #1eb3e4}
+a#cerrar-index {background-color:#f8f8f8; position:absolute; left: 20px; margin-top: 20px; padding: 0; width:100px; height:100px;}
+a#cerrar {background-color:#231F20; position:absolute; right: 20px; margin-top: 30px; padding: 0;}
 
 /* Nav Horizontal (-VERTICAL-) Index */
 ul.botonera-horizontal {position: absolute; top: 40px; left: 0; padding: 0; margin: 0; color: #FFF; font-family:'GothamRounded-Medium', Arial, Helvetica, sans-serif; z-index: 2!important;}
@@ -95,9 +97,6 @@ a.link-pilares-estilo, a.link-pilares-seguridad, a.link-pilares-medio-ambiente {
 a.link-pilares-estilo {width: 353px; height: 360px; top: 320px; left: 72px; /*background: #CCC; opacity: .5;*/}
 a.link-pilares-seguridad {width: 495px; height: 460px; top: 70px; left: 385px; /*background: #CCC; opacity: .5;*/}
 a.link-pilares-medio-ambiente {width: 600px; height: 530px; top: 104px; left: 850px; /*background: #CCC; opacity: .5;*/}
-
-/* Icono FadeOut: Beneficios y Pilares */
-div.iconolr {background:url(../../img/icono-lr-touch.png) no-repeat center; height:400px; width:400px; position:absolute; left:35%; top:21%; z-index:999999;}​
 
 /*--------------------------------------- Calidad 360 -------- */
 a.link-estilo, a.link-servicio, a.link-ambiente, a.link-ubicacion, a.link-calidad, a.link-venta, a.link-experiencia {position: absolute; text-decoration: none; display: block;}
@@ -243,5 +242,8 @@ div.texto-dpto p a {text-decoration: none; color: #FFF; font-size: 25px; font-we
 div.imagen-dpto { float: left; width: 400px; height: 445px; background: #008ac9!important; padding: 0; margin: 0;}
 
 /* --------------------------------------- Cursor None -------- */
-/*html, body, img, a, li, div {cursor: none!important; -moz-user-select: none;-webkit-user-select: none;-webkit-user-drag:none; -khtml-user-select: none; -ms-user-select: none; user-select: none;}
-input, label {cursor: none!important;}*/
+html, body, img, a, li, div {cursor: none!important; -moz-user-select: none;-webkit-user-select: none;-webkit-user-drag:none; -khtml-user-select: none; -ms-user-select: none; user-select: none;}
+input, label {cursor: none!important;}
+
+/* Icono FadeOut: Beneficios y Pilares */
+div.iconolr {background:url(../../img/icono-lr-touch.png) no-repeat center; height:400px; width:400px; position:absolute; left:35%; top:21%; z-index:999999;}​

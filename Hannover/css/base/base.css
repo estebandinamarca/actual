@@ -1,0 +1,269 @@
+/*
+* Estilos para Hannover:
+* Pantalla 32"
+* Resolución: 1366px x 768px.
+*/
+
+/* ===============================   Reset Normalize  ================================= */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary {display: block;} audio,canvas,video {display: inline-block;*display: inline;*zoom: 1;} audio:not([controls]) {display: none; height: 0;} [hidden] {display: none;} html {font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} html,button,input,select,textarea {font-family: sans-serif;} body {margin: 0;} a:focus {outline: thin dotted;} a:active,a:hover {outline: 0;} h1 {font-size: 2em;margin: 0.67em 0;} h2 {font-size: 1.5em;margin: 0.83em 0;} h3 {font-size: 1.17em; margin: 1em 0;} h4 {font-size: 1em;margin: 1.33em 0;} h5 {font-size: 0.83em; margin: 1.67em 0;} h6 {font-size: 0.75em; margin: 2.33em 0;} abbr[title] {border-bottom: 1px dotted;} b,strong {font-weight: bold;} blockquote { margin: 1em 40px;} dfn {font-style: italic;} mark {background: #ff0; color: #000;} p,pre { margin: 1em 0;} code,kbd,pre,samp { font-family: monospace, serif; _font-family: 'courier new', monospace;  font-size: 1em;} pre { white-space: pre; white-space: pre-wrap;word-wrap: break-word;} q {quotes: none;} q:before,q:after {content: '';content: none;} small {font-size: 75%;} sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; } sup { top: -0.5em;} sub { bottom: -0.25em;} dl,menu,ol,ul { margin: 1em 0;} dd {margin: 0 0 0 40px;} menu,ol,ul { padding: 0 0 0 40px;} nav ul,nav ol {list-style: none; list-style-image: none;} img {border: 0; -ms-interpolation-mode: bicubic;} svg:not(:root) { overflow: hidden;} figure { margin: 0;} form {margin: 0;} fieldset { border: 1px solid #c0c0c0; margin: 0 2px;  padding: 0.35em 0.625em 0.75em;} legend { border: 0; padding: 0; white-space: normal; *margin-left: -7px;} button,input,select,textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle;} button,input {line-height: normal;} button,html input[type="button"],input[type="reset"],input[type="submit"] { -webkit-appearance: button; cursor: none!important;*overflow: visible;} button[disabled],input[disabled] {cursor: default;} input[type="checkbox"],input[type="radio"] {box-sizing: border-box; padding: 0;*height: 13px; *width: 13px;} input[type="search"] {-webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {-webkit-appearance: none;} button::-moz-focus-inner,input::-moz-focus-inner { border: 0; padding: 0;} textarea {overflow: auto;vertical-align: top;} table {border-collapse: collapse; border-spacing: 0;}
+
+/* ------------------------------------------ Fontface Gotham -------- */
+@font-face {font-family: 'GothamRounded-Medium'; src: url('../../fonts/sgothamrnd-medium.eot'); src: url('../../fonts/gothamrnd-medium.eot?#iefix') format('embedded-opentype'), url('../../fonts/gothamrnd-medium.woff') format('woff'), url('../../fonts/gothamrnd-medium.ttf') format('truetype'), url('../../fonts/gothamrnd-medium.svg#gothamrnd-medium') format('svg'); font-weight: normal; font-style: normal;}
+@font-face {font-family: 'Gotham-Light'; src: url('../../fonts/gotham-light.eot'); src: url('../../fonts/gotham-light.eot?#iefix') format('embedded-opentype'),url('../../fonts/gotham-light.woff') format('woff'), url('../../fonts/gotham-light.ttf') format('truetype'), url('../../fonts/gotham-light.svg#gotham-light') format('svg'); font-weight: normal; font-style: normal;}
+@font-face {font-family: 'Gotham-Book'; src: url('../../fonts/gotham-book.eot'); src: url('../../fonts/gotham-book.eot?#iefix') format('embedded-opentype'),url('../../fonts/gotham-book.woff') format('woff'), url('../../fonts/gotham-book.ttf') format('truetype'), url('../../fonts/gotham-book.svg#gotham-book') format('svg'); font-weight: normal; font-style: normal;}
+
+/*---------------------------------------  Estilos Generales --------- */
+body {margin: 0; padding: 0; /*background: #fff;*/}
+body, a {font-weight:normal; text-shadow:none; text-decoration:none; overflow: hidden;}
+
+/*---------------------------------------  Backgrounds Páginas --------- */
+div.contenedor-principal {width:1366px; height:768px; overflow:hidden;}
+.bg-body-papel {background: url(../../img/bg-general.jpg) center no-repeat;}
+
+div.inicio {background:url(../../img/bg-inicio.jpg) center no-repeat;}
+div.inicio-beneficios {background:url(../../img/bg-beneficios.jpg) center no-repeat;}
+div.inicio-pilares {background:url(../../img/bg-pilares.jpg) center no-repeat;}
+div.inicio-calidad360 {background:url(../../img/bg-calidad360.jpg) center no-repeat;}
+div.inicio-plantas {background:url(../../img/bg-plantas.jpg) center no-repeat;}
+div.inicio-areas-comunes {background:url(../../img/bg-areas-comunes.jpg) center top no-repeat;}
+div.inicio-espacios {background:url(../../img/bg-espacios.jpg) center top no-repeat;}
+div.inicio-video {background:url(../../img/bg-video.jpg) center no-repeat;}
+div.inicio-mapa-nunoa {background:url(../../img/bg-mapa-nunoa.jpg) center top no-repeat;}
+div.inicio-mapa-las-condes {background:url(../../img/bg-mapa-las-condes.jpg) center top no-repeat;}
+div.inicio-mapa-san-miguel {background:url(../../img/bg-mapa-san-miguel.jpg) center top no-repeat;}
+div.inicio-mapa-santiago {background:url(../../img/bg-mapa-santiago.jpg) center top no-repeat;}
+div.inicio-mapa-huechuraba {background:url(../../img/bg-mapa-huechuraba.jpg) center top no-repeat;}
+
+/*---------------------------------------  Div Contenido --------- */
+div.contenido {width:1366px; height:675px; float:left}
+
+/*--------------------------------------- Menús de Navegación -------- */
+/* Nav Vertical Index */
+a.link-inicio-sitio-web, a.link-inicio-actual, a.link-inicio-proyectos, a.link-inicio-hannover {position: absolute; text-decoration: none; display: block;}
+a.link-inicio-hannover {width: 380px; height: 70px; top: 338px; left: 0px;}
+a.link-inicio-actual {width: 380px; height: 70px; top: 430px; left: 0px;}
+a.link-inicio-proyectos {width: 380px; height: 70px; top: 522px; left: 0px;}
+a.link-inicio-sitio-web {width: 380px; height: 70px; top: 618px; left: 0px;}
+
+/* Nav Horizontal en todas las paginas */
+div.botonera {width:1100px; height:65px;  /* float:right;*/ position: absolute; top: 665px; right: 0px; background:#008ac9; -webkit-border-radius: 20px 0px 0px 20px; border-radius: 20px 0px 0px 20px; z-index: 2!important;}
+div.botonera-proyectos {width: 650px!important; z-index: 2!important;}
+
+div.botonera-top {width:1100px; height:65px; float:right; background:none; margin:0; z-index: 2;}
+nav.top {font-family:'GothamRounded-Medium', Arial, Helvetica, sans-serif; text-decoration:none; color:#FFF; font-weight:normal; font-size:21px; text-align:left; padding:0; margin:0; line-height:65px;}
+nav.top a {text-decoration:none; color:#FFF; font-weight:normal; padding:0 14px; height:65px; text-shadow: none; display: block; float: left; border-left: 1px dotted #1eb3e4;}
+/* Menú de Navegación (Estilos para ambos navs) */
+nav.top a:first-child {padding-left:20px; border-left: none;}
+nav.top a.current {color:#1eb3e4;}
+nav.inicio a.current {color: #1eb3e4}
+
+/* Nav Horizontal (-VERTICAL-) Index */
+ul.botonera-horizontal {position: absolute; top: 40px; left: 0; padding: 0; margin: 0; color: #FFF; font-family:'GothamRounded-Medium', Arial, Helvetica, sans-serif; z-index: 2!important;}
+ul.botonera-horizontal li {display: block; height: 55px; width: 200px; background: #008ac9; margin: 0 0 12px 0; line-height: 55px; -webkit-border-radius: 0px 15px 15px 0px; border-radius: 0px 15px 15px 0px;}
+ul.botonera-horizontal li a {display: block; text-decoration: none; color: #FFF; font-size: 23px; text-align: center; padding: 0 0 0 60px; }
+ul.botonera-horizontal li a.current {color: #1eb3e4}
+ul.botonera-horizontal li.sitio-web a {background: url(../../img/small-flecha-naranjo.png) no-repeat left;}
+ul.botonera-horizontal li.actual a {background: url(../../img/small-flecha-azul.png) no-repeat left;}
+ul.botonera-horizontal li.proyectos a {background: url(../../img/small-flecha-amarillo.png) no-repeat left;}
+ul.botonera-horizontal li.transparente a {background: url(../../img/small-flecha-amarillo-trans.png) no-repeat left;}
+ul.botonera-horizontal li:active {background: #005981}
+
+/*--------------------------------------- Proyectos -------- */
+div.inicio-proyectos-cabot, li.inicio-proyectos-cabot {background:url(../../img/bg-cabot.jpg) center no-repeat; z-index: 1;}
+div.proyectos-mayecura, li.proyectos-mayecura {background:url(../../img/bg-mayecura.jpg) center no-repeat; z-index: 1;}
+div.proyectos-bosques, li.proyectos-bosques {background:url(../../img/bg-bosques.jpg) center no-repeat; z-index: 1;}
+div.proyectos-lombardia, li.proyectos-lombardia {background:url(../../img/bg-lombardia.jpg) center no-repeat; z-index: 1;}
+div.proyectos-cervantes, li.proyectos-cervantes {background:url(../../img/bg-cervantes.jpg) center no-repeat; z-index: 1;}
+div.proyectos-holanda, li.proyectos-holanda {background:url(../../img/bg-holanda.jpg) center no-repeat; z-index: 1;}
+div.proyectos-villagra, li.proyectos-villagra {background:url(../../img/bg-villagra.jpg) center no-repeat; z-index: 1;}
+div.proyectos-hannover, li.proyectos-hannover {background:url(../../img/bg-hannover.jpg) center no-repeat; z-index: 1;}
+
+a.link-next, a.link-prev {position: absolute; text-decoration: none; display: block;}
+a.link-next {width: 90px; height: 130px; top: 310px; left: 251px;}
+a.link-prev {width: 90px; height: 130px; top: 310px; left: 5px;}
+
+a.video-proyecto {width: 260px; height: 170px; text-decoration: none; display: block; margin: 230px 0 0 1015px;}
+/*a.video-proyecto {width: 260px; height: 170px; text-decoration: none; display: block; position: absolute; top: 230px; left: 1015px; z-index: 2;}*/
+
+/*--------------------------------------- Beneficios -------- */
+li.beneficios-novios {background:url(../../img/bg-beneficios-novios.jpg) center no-repeat; z-index: 1;}
+li.beneficios-amigo {background:url(../../img/bg-beneficios-amigo.jpg) center no-repeat; z-index: 1;}
+li.beneficios-propiedad {background:url(../../img/bg-beneficios-propiedad.jpg) center no-repeat; z-index: 1;}
+
+a.link-beneficios-novios, a.link-beneficios-amigos, a.link-beneficios-hogar, a.link-beneficios-propiedad {position: absolute; text-decoration: none; display: block; -webkit-transform: scale(1) rotate(78deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);}
+a.link-beneficios-novios {width: 313px; height: 260px; top: 308px; left: 232px;}
+a.link-beneficios-amigos {width: 455px; height: 370px; top: 190px; left: 487px;}
+/*a.link-beneficios-hogar {width: 400px; height: 360px; top: 75px; left: 670px;}*/
+a.link-beneficios-propiedad {width: 400px; height: 360px; top: 112px; left: 891px;}
+
+/*--------------------------------------- Pilares -------- */
+a.link-pilares-estilo, a.link-pilares-seguridad, a.link-pilares-medio-ambiente {position: absolute; text-decoration: none; display: block; -webkit-transform: scale(1) rotate(78deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);}
+a.link-pilares-estilo {width: 353px; height: 360px; top: 320px; left: 72px;}
+a.link-pilares-seguridad {width: 495px; height: 460px; top: 70px; left: 385px;}
+a.link-pilares-medio-ambiente {width: 600px; height: 530px; top: 104px; left: 850px;}
+
+/* --------------------------------------- Calidad 360 -------- */
+a.link-estilo, a.link-servicio, a.link-ambiente, a.link-ubicacion, a.link-calidad, a.link-venta, a.link-experiencia {position: absolute; text-decoration: none; display: block;}
+a.link-estilo {width: 250px; height: 60px; top: 200px; left: 370px;}
+a.link-servicio {width: 320px; height: 60px; top: 310px; left: 260px;}
+a.link-ambiente {width: 320px; height: 60px; top: 460px; left: 190px;}
+a.link-ubicacion {width: 290px; height: 60px; top: 210px; left: 850px;}
+a.link-calidad {width: 300px; height: 60px; top: 320px; left: 880px;}
+a.link-venta {width: 250px; height: 60px; top: 422px; left: 860px;}
+a.link-experiencia {width: 250px; height: 60px; top: 520px; left: 860px;}
+
+/*--------------------------------------- Plantas Piso -------- */
+div.bg-dpto-a {background:url(../../img/bg-dpto-a.jpg) center no-repeat;}
+div.bg-dpto-b {background:url(../../img/bg-dpto-b.jpg) center no-repeat;}
+div.bg-dpto-c {background:url(../../img/bg-dpto-c.jpg) center no-repeat;}
+div.bg-dpto-d {background:url(../../img/bg-dpto-d.jpg) center no-repeat;}
+div.bg-dpto-e {background:url(../../img/bg-dpto-e.jpg) center no-repeat;}
+div.bg-dpto-f {background:url(../../img/bg-dpto-f.jpg) center no-repeat;}
+div.bg-dpto-g {background:url(../../img/bg-dpto-g.jpg) center no-repeat;}
+div.bg-dpto-h {background:url(../../img/bg-dpto-h.jpg) center no-repeat;}
+div.bg-dpto-i {background:url(../../img/bg-dpto-i.jpg) center no-repeat;}
+div.bg-dpto-j {background:url(../../img/bg-dpto-j.jpg) center no-repeat;}
+div.bg-dpto-k {background:url(../../img/bg-dpto-k.jpg) center no-repeat;}
+
+a.plantas-volver-btn, a.link-dpto-a, a.link-dpto-b, a.link-dpto-c, a.link-dpto-d, a.link-dpto-e, a.link-dpto-f, a.link-dpto-g, a.link-dpto-h, a.link-dpto-i, a.link-dpto-j, a.link-dpto-k {position: absolute; text-decoration: none; display: block; /*background: #CCC; opacity: 0.5;*/}
+a.plantas-volver-btn {width: 160px; height: 100px; top: 35px; left: 1200px;}
+a.link-dpto-a {width: 235px; height: 145px; top: 230px; left: 300px;}
+a.link-dpto-b {width: 135px; height: 170px; top: 205px; left: 540px;}
+a.link-dpto-c {width: 135px; height: 140px; top: 235px; left: 680px;}
+a.link-dpto-d {width: 245px; height: 140px; top: 235px; left: 820px;}
+a.link-dpto-e {width: 260px; height: 180px; top: 195px; left: 1071px;}
+a.link-dpto-f {width: 250px; height: 185px; top: 385px; left: 1095px;}
+a.link-dpto-g {width: 190px; height: 165px; top: 395px; left: 890px;}
+a.link-dpto-h {width: 245px; height: 165px; top: 395px; left: 640px;}
+a.link-dpto-i {width: 225px; height: 165px; top: 395px; left: 410px;}
+a.link-dpto-j {width: 305px; height: 160px; top: 377px; left: 100px;}
+a.link-dpto-k {width: 260px; height: 185px; top: 190px; left: 35px;}
+
+/*--------------------------------------- Video -------- */
+body.videos { width: 720px; height:480px; margin: 0; padding: 0; background: #008ac9!important; overflow: hidden!important; }
+a.link-video {position: absolute; width: 480px; height: 300px; top: 241px; left: 631px; text-decoration: none; display: block;}
+
+/*--------------------------------------- Espacios -------- */
+#videos_cortos {width:1366px; float:left; margin-left:350px; margin-top:45px;}
+#videos_cortos .cont_video_corto {float:left; width:324px; padding:0 10px 5px;}
+#videos_cortos .cont_video_corto h2 {margin:0; font-size:16px; font-weight:bold; color:#525F6F;}
+
+#videos_cortos .video-edificio {top: 45px; left: 285px;}
+#videos_cortos .video-hall {top: 45px; left: 655px;}
+#videos_cortos .video-cine {top: 45px; left: 1022px;}
+#videos_cortos .video-gimnacio {top: 255px; left: 285px;}
+#videos_cortos .video-lounge {top: 255px; left: 655px;}
+#videos_cortos .video-piscina {top: 255px; left: 1022px;}
+#videos_cortos .video-quincho {top: 465px; left: 285px;}
+#videos_cortos .video-multiple {top: 465px; left: 655px;}
+#videos_cortos .video-departamento {top: 465px; left: 1022px;}
+a.play-video-corto {width: 324px; height: 176px; position: absolute; text-decoration: none; display: block; z-index:999;}
+a.img-edificio-play, a.img-hall-play, a.img-cine-play, a.img-gimnasio-play, a.img-lounge-play, a.img-piscina-play, a.img-quincho-play, a.img-multiple-play, a.img-dpto-play {background-image:url("../../img/play-corto.png");}
+a.img-edificio-pause, a.img-hall-pause, a.img-cine-pause, a.img-gimnasio-pause, a.img-lounge-pause, a.img-piscina-pause, a.img-quincho-pause, a.img-multiple-pause, a.img-dpto-pause {background-image:url("../../img/pause-corto.png");}
+
+/*--------------------------------------- Video3D -------- */
+/*div.video3d {position: absolute; width: 490px; height:300px; padding: 5px 20px; background: #000; top: 261px; left: 755px; text-decoration: none; display: block;}*/
+/*a.link-video3d {position: absolute; width: 480px; height: 300px; top: 262px; left: 770px; text-decoration: none; display: block;}*/
+
+/*--------------------------------------- Inicio Covertura SVG -------- */
+div.mapa-svg { width:auto; height:auto; /*background:#FFF;*/ margin:35px auto 0 auto; text-align:center;}
+#santiago, #lascondes, #nunoa, #sanmiguel, #huechuraba, path, g {opacity: 1; cursor: none}
+#santiago:active, #lascondes:active, #nunoa:active, #sanmiguel:active, #huechuraba:active {opacity: 0.6;}
+
+/*--------------------------------------- Covertura Mapas -------- */
+a.mapa-svg-volver, a.nunoa-dpto1, a.nunoa-dpto2, a.nunoa-dpto3, a.nunoa-dpto4, a.nunoa-dpto5, a.nunoa-dpto6,
+a.nunoa-dpto7, a.nunoa-dpto8, a.nunoa-dpto9, a.nunoa-dpto10, a.nunoa-dpto11, a.nunoa-dpto12, a.nunoa-dpto13,
+a.nunoa-dpto14, a.nunoa-dpto15, a.nunoa-dpto16, a.nunoa-dpto17, a.nunoa-dpto18, a.nunoa-dpto19,
+a.nunoa-dpto20, a.santiago-dpto1, a.santiago-dpto2, a.santiago-dpto3, a.las-condes-dpto1, a.las-condes-dpto2,
+a.las-condes-dpto3, a.las-condes-dpto4, a.las-condes-dpto5, a.san-miguel-dpto1, a.san-miguel-dpto2,
+a.san-miguel-dpto3, a.huechuraba-dpto1, a.huechuraba-dpto2 {width: 30px; height: 30px; position: absolute; text-decoration: none; display: block; -webkit-transform: scale(1) rotate(78deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg); /*background: #CCC; opacity: 0;*/}
+a.mapa-svg-volver {width: 150px; height: 145px; top: 25px; left: 1095px;-webkit-transform: none;}
+
+/*--------- Ñuñoa -------- */
+a.nunoa-dpto1 {top: 343px; left: 175px;}
+a.nunoa-dpto2 {top: 415px; left: 156px;}
+a.nunoa-dpto3 {top: 376px; left: 238px;}
+a.nunoa-dpto4 {top: 401px; left: 213px;}
+a.nunoa-dpto5 {top: 428px; left: 227px;}
+a.nunoa-dpto6 {top: 394px; left: 308px;}
+a.nunoa-dpto7 {top: 403px; left: 412px;}
+a.nunoa-dpto8 {top: 450px; left: 457px;}
+a.nunoa-dpto9 {top: 412px; left: 468px;}
+a.nunoa-dpto10 {top: 422px; left: 536px;}
+a.nunoa-dpto11 {top: 347px; left: 647px;}
+a.nunoa-dpto12 {top: 378px; left: 663px;}
+a.nunoa-dpto13 {top: 406px; left: 679px;}
+a.nunoa-dpto14 {top: 355px; left: 689px;}
+a.nunoa-dpto15 {top: 308px; left: 723px;}
+a.nunoa-dpto16 {top: 275px; left: 743px;}
+a.nunoa-dpto17 {top: 364px; left: 815px;}
+a.nunoa-dpto18 {top: 388px; left: 1073px;}
+a.nunoa-dpto19 {top: 334px; left: 1192px;}
+a.nunoa-dpto20 {top: 420px; left: 1193px;}
+
+/*--------- Santiago -------- */
+a.santiago-dpto1, a.santiago-dpto2, a.santiago-dpto3 {width: 55px; height: 55px;}
+a.santiago-dpto1 {top: 56px; left: 421px;}
+a.santiago-dpto2 {top: 578px; left: 540px;}
+a.santiago-dpto3 {top: 305px; left: 995px;}
+
+/*--------- Las Condes -------- */
+a.las-condes-dpto1, a.las-condes-dpto2, a.las-condes-dpto3, a.las-condes-dpto4, a.las-condes-dpto5 {width: 50px; height: 50px;}
+a.las-condes-dpto1 {top: 29px; left: 840px;}
+a.las-condes-dpto2 {top: 513px; left: 632px;}
+a.las-condes-dpto3 {top: 520px; left: 737px;}
+a.las-condes-dpto4 {top: 528px; left: 790px;}
+a.las-condes-dpto5 {top: 549px; left: 848px;}
+
+/*--------- San Miguel -------- */
+a.san-miguel-dpto1, a.san-miguel-dpto2, a.san-miguel-dpto3 {width: 55px; height: 55px;}
+a.san-miguel-dpto1 {top: 84px; left: 633px;}
+a.san-miguel-dpto2 {top: 275px; left: 590px;}
+a.san-miguel-dpto3 {top: 560px; left: 531px;}
+
+/*--------- Huechuraba -------- */
+a.huechuraba-dpto1, a.huechuraba-dpto2 {width: 55px; height: 55px;}
+a.huechuraba-dpto1 {top: 79px; left: 412px;}
+a.huechuraba-dpto2 {top: 547px; left: 1125px;}
+
+/*--------------------------------------- Icono Touch Mapas -------- */
+div#icono {background:url(../../img/icono-touch.png) center no-repeat; height:400px; width: 400px; position: absolute; left: 35%; top: 21%; z-index: 1000;}​
+
+/*--------------------------------------- iScroll4 (Proyectos) -------- */
+ul,li {padding:0px; margin:0px;}
+#wrapper {width:1366px; height:768px; float:left; position:relative; z-index:1; overflow:hidden; background: #fff; -webkit-border-radius:10px; -moz-border-radius:10px; -o-border-radius:10px; border-radius:10px; margin: 0; padding: 0;}
+#scroller {width:2732px; height:100%; float:left; padding:0;}
+.scroller-tres {width:4098px!important;}
+.scroller-cuatro {width:5464px!important;}
+#scroller ul { list-style:none; display:block; float:left; width:100%; height:100%; padding:0; margin:0; 	text-align:left;}
+#scroller li {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; display:block; float:left; width:1366px; height:768px; text-align:center;}
+
+#nav {width:1366px; /*float:left;*/ z-index: 2; position: absolute; margin: 0; list-style: none;}
+#next { list-style: none; width: 90px; height: 130px; top: 388px; left: 251px; z-index: 2; position: absolute; /*float:left;*/ /*font-weight:bold; font-size:14px;*/ /*padding:5px 0;*/}
+#prev { list-style: none; width: 90px; height: 130px; top: 388px; left: 5px; z-index: 2; position: absolute; /*float:right; text-align:right;*/}
+
+#indicator, #indicator > li { display:block; float:left; list-style:none; padding:0; margin:0;}
+#indicator { width:110px; padding:12px 0 0 30px;}
+#indicator > li {text-indent:-9999em; width:8px; height:8px; -webkit-border-radius:4px; -moz-border-radius:4px; -o-border-radius:4px; border-radius:4px; background:#ddd; overflow:hidden; margin-right:4px;}
+#indicator > li.active {background:#888;} 
+#indicator > li:last-child {margin:0;}
+
+/* ------------------------------ SwipeView (en: css/swipeview/styles.css)-------- */
+
+/* ////////////////////////////////////// Iframes Gral -------- */
+div.contenido-iframe {background: #797f8b; padding: 30px; margin: 0; height: auto; width: auto; overflow: hidden!important;}
+div.texto-iframe {background: #797f8b; margin: 0; width: 400px; height: auto; font-family: 'Gotham-Book', Arial, Helvetica, sans-serif!important; font-weight:normal; color: #FFF; overflow: hidden!important;}
+
+/*////////////////////////////////////// Iframes Deptos -------- */
+body.dptos { width: 700px; height:445px; margin: 0; padding: 0; background: #008ac9!important; overflow: hidden!important; }
+div.texto-dpto { float: right; background: #008ac9; margin: 0; padding: 0; width: 300px; height: 445px; overflow: hidden!important;}
+div.texto-dpto p { padding: 10px 20px 0 10px; font-family: 'Gotham-Book', Arial, Helvetica, sans-serif!important; font-weight:normal; color: #FFF; text-align: left; font-size: 18px;}
+div.texto-dpto p a {text-decoration: none; color: #FFF; font-size: 25px; font-weight: bold; display: block; width: 200px; height: 50px; background:url(../../img/dptos/360-flecha.png) no-repeat center right; padding: 5px 20px; line-height: 50px;}
+div.imagen-dpto { float: left; width: 400px; height: 445px; background: #008ac9!important; padding: 0; margin: 0;}
+
+/* --------------------------------------- Cursor None -------- */
+/*html, body, img, a, li, div {cursor: none!important; -moz-user-select: none;-webkit-user-select: none;-webkit-user-drag:none; -khtml-user-select: none; -ms-user-select: none; user-select: none;}
+input, label {cursor: none!important;}*/
+
+/* Icono FadeOut: Beneficios y Pilares */
+div.iconolr {background-image:url(../../img/icono-lr-touch.png); background-position: center; background-repeat:no-repeat; height:400px; width:400px; position:absolute; left:35%; top:21%; z-index:9999;}

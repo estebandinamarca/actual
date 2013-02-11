@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Actual</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Jquery Base -->
+    <script src="js/jquery-1.8.2.min.js"></script>     
+    <!-- Swipeview -->
+    <link rel="stylesheet" href="css/swipeview/style.css" />
+    <script src="js/swipeview/swipeview.js"></script>
+    <!-- Estilo Base -->
+    <link rel="stylesheet" href="css/base/base.css" />
+    <!-- Fancybox -->
+    <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" />
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".web-actual").fancybox({
+                closeClick  : true,
+                openEffect  : 'elastic',
+                closeEffect : 'elastic',
+                padding     : 0,
+                height      : 760,
+                width       : 1000,
+                autoSize    : false,
+                closeBtn    : false,
+            });
+        });
+    </script>
+    <!-- Efecto Fade -->
+    <script>
+    $(document).ready(function() {
+        $('.efecto-pagina').css("display", "none");
+        $('.efecto-pagina').fadeIn(100);
+        $('.iconolr').fadeOut(2400);         
+      });
+    </script>
+    <!-- Time Out --> 
+    <script type="text/JavaScript">
+    var timeout;
+    document.onmousemove = function(){
+    clearTimeout(timeout);
+    timeout = setTimeout(function(){top.location.href='protector.html'}, 280000);
+    }
+    </script>    
+    </head>
+
+<body>
+<div class="iconolr"></div>  
+<div class="efecto-pagina">
+
+    <div class="contenedor-principal">
+
+    <div id="wrapper"></div>
+        <ul id="nav-swipeview">
+            <li id="prev" class="pilares-prev" onclick="gallery.prev()"><img src="img/back-blue.png"></li>
+            <li id="next" class="pilares-next" onclick="gallery.next()"><img src="img/forward-blue.png"></li>
+        </ul>
+
+        <!-- <div class="contenido"></div> -->
+
+        <ul class="botonera-horizontal">
+            <li class="sitio-web"><a href="inicio-hannover.html">Hannover</a></li>
+            <li class="actual"><a class="current" href="inicio-actual.html">Actual</a></li>
+            <li class="proyectos"><a href="proyectos.html">Proyectos</a></li>
+            <li class="proyectos transparente"><a class="web-actual fancybox.iframe" href="http://www.iactual.cl" data-ajax="false">Sitio Web</a></li>
+        </ul>   
+
+        <div class="botonera">
+            <div class="botonera-top">
+                <nav class="top">
+                <a href="inicio-covertura.html">Cobertura Geográfica</a>
+                <a href="inicio-calidad360.html">Calidad 360º</a>
+                <a href="inicio-beneficios.html">Beneficios</a>
+                <a href="inicio-pilares.html" class="current">Pilares</a>
+                <a href="inicio-video.html">Video Institucional</a>                   
+                </nav>
+            </div>
+        </div>      
+    </div>
+</div>
+
+<script type="text/javascript">
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+var gallery,
+    el,
+    i,
+    page,
+    dots = document.querySelectorAll('#nav-swipeview li'),
+    slides = [
+        {
+            img: 'img/bg-seguridad.jpg',
+            width: 1366,
+            height: 768,
+            //desc: 'Piazza del Duomo, Florence, Italy'
+        },
+        {
+            img: 'img/bg-medio-ambiente.jpg',
+            width: 1366,
+            height: 768,
+            //desc: 'Tuscan Landscape'
+        },
+        {
+            img: 'img/bg-estilo.jpg',
+            width: 1366,
+            height: 768,
+            //desc: 'Colosseo, Rome, Italy'
+        },
+    ];
+
+gallery = new SwipeView('#wrapper', { numberOfPages: slides.length });
+
+// Load initial data
+for (i=0; i<3; i++) {
+    page = i==0 ? slides.length-1 : i-1;
+    el = document.createElement('img');
+    el.className = 'loading';
+    el.src = slides[page].img;
+    el.width = slides[page].width;
+    el.height = slides[page].height;
+    el.onload = function () { this.className = ''; }
+    gallery.masterPages[i].appendChild(el);
+
+    //el = document.createElement('span');
+    //el.innerHTML = slides[page].desc;
+    //gallery.masterPages[i].appendChild(el)
+}
+
+gallery.onFlip(function () {
+    var el,
+        upcoming,
+        i;
+
+    for (i=0; i<3; i++) {
+        upcoming = gallery.masterPages[i].dataset.upcomingPageIndex;
+
+        if (upcoming != gallery.masterPages[i].dataset.pageIndex) {
+            el = gallery.masterPages[i].querySelector('img');
+            el.className = 'loading';
+            el.src = slides[upcoming].img;
+            el.width = slides[upcoming].width;
+            el.height = slides[upcoming].height;
+            
+            //el = gallery.masterPages[i].querySelector('span');
+            //el.innerHTML = slides[upcoming].desc;
+        }
+    }
+    
+    // document.querySelector('#nav .selected').className = '';
+    // dots[gallery.pageIndex+1].className = 'selected';
+});
+
+gallery.onMoveOut(function () {
+    gallery.masterPages[gallery.currentMasterPage].className = gallery.masterPages[gallery.currentMasterPage].className.replace(/(^|\s)swipeview-active(\s|$)/, '');
+});
+
+gallery.onMoveIn(function () {
+    var className = gallery.masterPages[gallery.currentMasterPage].className;
+    /(^|\s)swipeview-active(\s|$)/.test(className) || (gallery.masterPages[gallery.currentMasterPage].className = !className ? 'swipeview-active' : className + ' swipeview-active');
+});
+
+</script>
+
+</body>
+</html>
